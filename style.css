@@ -2148,7 +2148,7 @@ footer .container {
         }
 
         .rules-article h2 {
-            color: #f1f5f9;
+            color: #f1f1f9;
             font-size: 1.5rem;
             margin: 0 0 1.5rem 0;
             border-bottom: 2px solid rgba(59, 130, 246, 0.3);
@@ -2237,7 +2237,7 @@ footer .container {
 
 .matches-subtitle {
     text-align: center;
-    color: #cbd5e1;
+    color: #dddef5;
     font-size: 1rem;
     margin-top: -1.5rem;
     margin-bottom: 3rem;
@@ -2548,4 +2548,177 @@ footer .container {
 
 .match-history-card:nth-child(4) {
     animation-delay: 0.4s;
+}
+
+.matches {
+  margin-top: 40px;
+}
+
+.matches-header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.matches-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2a47c7;
+}
+
+.matches-icon {
+  margin-right: 10px;
+}
+
+.matches-all-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #f2b424;
+  color: #f2b424;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.matches-all-btn:hover {
+  background: #f2b424;
+  color: #111111;
+}
+
+/* блок-заглушка */
+.matches-empty {
+  border-radius: 16px;
+  border: 1px dashed #3c3c3c;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.matches-empty-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.matches-empty-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.matches-empty-subtitle {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* центрируем лево‑право */
+}
+
+/* общий блок команды */
+.team-block {
+  display: flex;
+  align-items: center;
+}
+
+/* правая команда: название слева, лого справа */
+.team-right {
+  flex-direction: row;      /* слева текст, справа логотип */
+  margin-left: auto;        /* блок прижат к правому краю карточки */
+  justify-content: flex-end;
+}
+
+/* делаем почти ноль расстояние между названием и логотипом */
+.team-right .team-info {
+  margin-right: 2px;        /* можно 0–4px, подбери по вкусу */
+}
+
+.team-right .team-logo-container {
+  margin-left: 0;           /* никаких дополнительных отступов */
+}
+
+/* Карточка матча */
+.match-history-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+  border-radius: 20px;
+  background: rgba(7, 20, 60, 0.9);
+  border: 1px solid rgba(64, 115, 255, 0.3);
+  margin-bottom: 24px;
+}
+
+/* Шапка с датой */
+.match-info-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.match-date {
+  font-size: 14px;
+  color: #a7b8ff;
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  /* вместо space-between делаем обычный поток */
+  justify-content: center;
+}
+
+/* левая команда */
+.team-left {
+  flex-direction: row;
+  margin-right: 32px;          /* расстояние от левой команды до счёта */
+}
+
+.team-left .team-logo-container {
+  margin-right: 8px;
+}
+
+/* правая команда: ближе к центру */
+.team-right {
+  flex-direction: row;
+  margin-left: 32px;           /* расстояние от счёта до названия правой */
+  justify-content: flex-end;
+}
+
+/* отступ между названием и лого минимальный */
+.team-right .team-logo-container {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+/* блок со счётом фиксированный по центру */
+.score-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;             /* можно уменьшить, чтобы всё ближе сойтись */
+}
+
+.score {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Бейдж статуса */
+.match-status-badge {
+  align-self: flex-end;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(64, 115, 255, 0.2);
+  color: #c8d4ff;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+/* Подвал (если будешь использовать) */
+.match-footer {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #7f8dff;
 }

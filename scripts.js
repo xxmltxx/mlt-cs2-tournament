@@ -7,11 +7,11 @@ const teamsData = {
     points: 150,
     rank: 1,
     players: [
-      { name: "losert", photo: "img/player-photo.jpg" },
-      { name: "dimensional", photo: "img/player-photo.jpg" },
-      { name: "CharlesS1a", photo: "img/player-photo.jpg" },
-      { name: "FishyJD", photo: "img/player-photo.jpg" },
-      { name: "Haneulek", photo: "img/player-photo.jpg" }
+      { name: "kas11k", photo: "img/player-photo.jpg" },
+      { name: "deserted", photo: "img/player-photo.jpg" },
+      { name: "Chapicka", photo: "img/player-photo.jpg" },
+      { name: "F1shyO", photo: "img/player-photo.jpg" },
+      { name: "Alma3ik", photo: "img/player-photo.jpg" }
     ]
   },
   2: {
@@ -22,7 +22,7 @@ const teamsData = {
     points: 125,
     rank: 2,
     players: [
-      { name: "vanilRb4", photo: "img/player-photo.jpg" },
+      { name: "vanilinbl4", photo: "img/player-photo.jpg" },
       { name: "izzo", photo: "img/player-photo.jpg" },
       { name: "san10ne", photo: "img/player-photo.jpg" },
       { name: "small_san", photo: "img/player-photo.jpg" },

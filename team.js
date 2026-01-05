@@ -1,8 +1,8 @@
 const teamsData = {
     1: {
-        name: "Wol2nt Team",
+        name: "Wol2nt Team🏆",
         logo: "img/Wol2nt Team.jpg",
-        players: ["kast1k", "deserted", "Chapickka", "FishyO", "Alma3ik"],
+        players: ["kas11k", "deserted", "Chapickka", "FishyO", "Alma3ik"],
         matches: [
             { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 2, oppScore: 1, date: "17.12.2025", stage: "1/4" },
             { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 2, oppScore: 0, date: "22.12.2025", stage: "1/2" },
@@ -11,7 +11,7 @@ const teamsData = {
         stats: { wins: 3, losses: 0, winrate: "100%", rating: 1 }
     },
     2: {
-        name: "2Play",
+        name: "2Play🥈",
         logo: "img/2play.jpg",
         players: ["vanilinbl4", "izzo", "sanl0ne", "small_san", "m0rb1e","shodnix"],
         matches: [
@@ -22,9 +22,9 @@ const teamsData = {
         stats: { wins: 2, losses: 1, winrate: "66%", rating: 2 }
     },
     3: {
-        name: "HW Team",
+        name: "HW Team🥉",
         logo: "img/HW Team.jpg",
-        players: ["-ZeNDoL", "f0l3x", "Lniko", "Garlik", "365"],
+        players: ["-ZeNDoL", "f0l3x", " ices4d", "Garlik", "365"],
         matches: [
             { opponent: "TEMPLI TEAM", opponentLogo: "img/TEMPLI TEAM.jpg", myScore: 2, oppScore: 0, date: "16.12.2025", stage: "1/4" },
             { opponent: "WaLent Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 2, oppScore: 0, date: "22.12.2025", stage: "1/2" },
