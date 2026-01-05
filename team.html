@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда | MLT CS2 TOURNAMENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="snow-layer"></div>
+    
+    <header>
+        <nav>
+            <a href="index.html" class="logo-container">
+                <div class="header-logo"><img src="img/logo.jpg" alt="logo"></div>
+                <span class="logo">MLT | CS2</span>
+            </a>
+            <ul class="nav-links">
+               <li><a href="teams.html">Команды</a></li>
+                <li><a href="tournaments.html">Турниры</a></li>
+                <li><a href="matches.html">Матчи</a></li>
+                <li><a href="mlt-rating.html">MLT рейтинг</a></li>
+                <li><a href="rules.html">Правила</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section class="team-details-section">
+        <div class="container">
+            <div class="team-details-header">
+                <img id="teamLogo" class="team-details-logo" src="" alt="logo">
+                <div class="team-details-info">
+                    <h1 id="teamName"></h1>
+                    <div id="teamStats" class="team-details-stats"></div>
+                </div>
+            </div>
+
+            <div class="team-details-content">
+                <div class="team-roster">
+                    <h2>Состав</h2>
+                    <div id="teamRoster" class="roster-list"></div>
+                </div>
+
+                <div class="team-matches">
+                    <h2>Матчи</h2>
+                    <div id="teamMatches" class="matches-list"></div>
+                </div>
+
+                <div class="team-stats-detailed">
+                    <h2>Статистика</h2>
+                    <div id="teamStatsDetailed" class="stats-grid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.twitch.tv/mlt_cs2" title="Twitch" target="_blank">
+                <i class="fab fa-twitch"></i>
+            </a>
+            <a href="https://t.me/MLT_CS2" title="Telegram" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 MLT CS2 Tournament</p>
+    </div>
+</footer>
+
+    <script src="team.js"></script>
+     <div class="snow-layer"></div>
+</body>
+</html>

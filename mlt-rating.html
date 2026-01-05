@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команды | MLT CS2 TOURNAMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-container">
+                <div class="header-logo">
+                    <img src="img/logo.jpg" alt="MLT Logo">
+                </div>
+                <div class="logo">MLT | CS2</div>
+            </a>
+            
+            <ul class="nav-links">
+               <li><a href="teams.html">Команды</a></li>
+                <li><a href="tournaments.html">Турниры</a></li>
+                <li><a href="matches.html">Матчи</a></li>
+                <li><a href="mlt-rating.html"class="active">MLT рейтинг</a></li>
+                <li><a href="rules.html">Правила</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ГЕРОЙ -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">MLT Рейтинг</h1>
+            <p class="hero-subtitle"></p>
+        </div>
+    </section>
+ <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+        <!-- ТАБЛИЦА РЕЙТИНГА -->
+       <!-- ТАБЛИЦА РЕЙТИНГА -->
+<div class="rating-table-container">
+    <table class="rating-table">
+        <thead>
+            <tr>
+                <th>Место</th>
+                <th>Команда</th>
+                <th>Матчи</th>
+                <th>Очки</th>
+                <th>Рейтинг</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="rating-row" onclick="showRoster(1)">
+                <td class="rank">#1</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/Wol2nt Team.jpg" alt="Team Wol2nt" class="team-logo">
+                    </div>
+                    Team Wol2nt
+                </td>
+                <td class="matches">3-0</td>
+                <td class="points">150</td>
+                <td class="rating">★★★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(2)">
+                <td class="rank">#2</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/2play.jpg" alt="2Play" class="team-logo">
+                    </div>
+                    2Play
+                </td>
+                <td class="matches">2-1</td>
+                <td class="points">75</td>
+                <td class="rating">★★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(3)">
+                <td class="rank">#3</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/HW Team.jpg" alt="HW Team" class="team-logo">
+                    </div>
+                    HW Team
+                </td>
+                <td class="matches">2-1</td>
+                <td class="points">75</td>
+                <td class="rating">★★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(4)">
+                <td class="rank">#4</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/4otka.jpg" alt="4otka" class="team-logo">
+                    </div>
+                    4otka
+                </td>
+                <td class="matches">1-2</td>
+                <td class="points">0</td>
+                <td class="rating">★★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(5)">
+                <td class="rank">#5</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/Bezdarez Team.jpg" alt="Bezdarrez Team" class="team-logo">
+                    </div>
+                    Bezdarrez Team
+                </td>
+                <td class="matches">0-1</td>
+                <td class="points">0</td>
+                <td class="rating">★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(6)">
+                <td class="rank">#6</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/TEMPLI TEAM.jpg" alt="TEMPLI TEAM" class="team-logo">
+                    </div>
+                    TEMPLI TEAM
+                </td>
+                <td class="matches">0-1</td>
+                <td class="points">0</td>
+                <td class="rating">★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(7)">
+                <td class="rank">#7</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/lotos.jpg" alt="Lotos Team" class="team-logo">
+                    </div>
+                    Lotos Team
+                </td>
+                <td class="matches">0-1</td>
+                <td class="points">0</td>
+                <td class="rating">★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(8)">
+                <td class="rank">#8</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/Platina Esports Academy.jpg" alt="Platina Esports Academy" class="team-logo">
+                    </div>
+                    Platina Esports Academy
+                </td>
+                <td class="matches">0-1</td>
+                <td class="points">0</td>
+                <td class="rating">★</td>
+            </tr>
+            
+            <tr class="rating-row" onclick="showRoster(9)">
+                <td class="rank">#9</td>
+                <td class="team-name">
+                    <div class="team-logo-box">
+                        <img src="img/DFSQUAD.jpg" alt="DFSQUAD" class="team-logo">
+                    </div>
+                    DFSQUAD
+                </td>
+                <td class="matches">0-0</td>
+                <td class="points">0</td>
+                <td class="rating">★</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО С РОСТЕРОМ -->
+    <div id="rosterModal" class="roster-modal">
+        <div class="roster-modal-content">
+            <button class="roster-close" onclick="closeRoster()">&times;</button>
+            
+            <div class="roster-header">
+                <h2 id="rosterTeamName"></h2>
+                <p id="rosterTeamStats"></p>
+            </div>
+            
+            <div class="roster-players">
+                <div class="players-grid" id="playersGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.twitch.tv/mlt_cs2" title="Twitch" target="_blank">
+                <i class="fab fa-twitch"></i>
+            </a>
+            <a href="https://t.me/MLT_CS2" title="Telegram" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 MLT CS2 Tournament</p>
+    </div>
+</footer>
+ <div class="snow-layer"></div>
+    <!-- СКРИПТЫ -->
+    <script src="scripts.js" defer></script>
+</body>
+</html>
