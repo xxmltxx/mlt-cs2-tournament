@@ -6,7 +6,8 @@ const teamsData = {
         matches: [
             { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 2, oppScore: 1, date: "17.12.2025", stage: "1/4" },
             { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 2, oppScore: 0, date: "22.12.2025", stage: "1/2" },
-            { opponent: "2Play", opponentLogo: "img/2play.jpg", myScore: 2, oppScore: 0, date: "26.12.2025", stage: "финал" }
+            { opponent: "2Play", opponentLogo: "img/2play.jpg", myScore: 2, oppScore: 0, date: "26.12.2025", stage: "финал" },
+            { opponent: "Team 61", opponentLogo: "img/Team 61.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" },
         ],
         stats: { wins: 3, losses: 0, winrate: "100%", rating: 1 }
     },
@@ -18,6 +19,7 @@ const teamsData = {
             { opponent: "Platina Esports Academy", opponentLogo: "img/Platina Esports Academy.jpg", myScore: 2, oppScore: 0, date: "18.12.2025", stage: "1/4" },
             { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 2, oppScore: 0, date: "23.12.2025", stage: "1/2" },
             { opponent: "WaLent Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 0, oppScore: 2, date: "26.12.2025", stage: "финал" }
+            
         ],
         stats: { wins: 2, losses: 1, winrate: "66%", rating: 2 }
     },
@@ -30,7 +32,7 @@ const teamsData = {
             { opponent: "WaLent Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 2, oppScore: 0, date: "22.12.2025", stage: "1/2" },
             { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 2, oppScore: 0, date: "25.12.2025", stage: "3а 3 место" }
         ],
-        stats: { wins: 3, losses: 0, winrate: "100%", rating: 3 }
+        stats: { wins: 2, losses: 1, winrate: "66%", rating: 3 }
     },
     4: {
         name: "4otka",
@@ -48,7 +50,8 @@ const teamsData = {
         logo: "img/Bezdarez Team.jpg",
         players: ["Into1imore", "z1zkay", "svetozar4iki","Breez", "skituls", "lovasik",],
         matches: [
-            { opponent: "WaLent Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 1, oppScore: 2, date: "17.12.2025", stage: "1/4" }
+            { opponent: "WaLent Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 1, oppScore: 2, date: "17.12.2025", stage: "1/4" },
+            { opponent: "Lotos Team", opponentLogo: "img/lotos.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" },
         ],
         stats: { wins: 0, losses: 1, winrate: "0%", rating: 5 }
     },
@@ -82,10 +85,57 @@ const teamsData = {
         logo: "img/lotos.jpg",
         players: ["Zayn0x", "Klay_dik", "FanTazy","Worm", "Shmaa", "Yazami"],
         matches: [
-            { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 1, oppScore: 2, date: "19.12.2025", stage: "1/4" }
+            { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 1, oppScore: 2, date: "19.12.2025", stage: "1/4" },
+            { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" },
         ],
         stats: { wins: 0, losses: 1, winrate: "0%", rating: 7 }
-    }
+    },
+    10: {
+        name: "Willow team",
+        logo: "img/Willow team.jpg",
+        players: ["sk1nw0rk", "praker ", "k1smain","st1kon", "mywil", ],
+        matches: [
+            { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 0, date: "09.01.2025", stage: "1/4" }
+        ],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 10 }
+    },
+    11: {
+        name: "LEGENDS5",
+        logo: "img/LEGENDS5.jpg",
+        players: ["d1sc0nn3ct ", "D1rolzy", "fanchik","YoUttRuE", "minor"],
+        matches: [
+            { opponent: "Xenox Team", opponentLogo: "img/Xenox Team.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
+        ],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 11 }
+    },
+    12: {
+        name: "Xenox Team",
+        logo: "img/Xenox Team.jpg",
+        players: ["Perf", "zefir", "ikeb","krystal", "l1tsh0t"],
+        matches: [
+            { opponent: "LEGENDS5", opponentLogo: "img/LEGENDS5.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
+        ],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 12 }
+    },
+    13: {
+        name: "Team 61",
+        logo: "img/Team 61.jpg",
+        players: ["farrrr", "lov3zzy", "VaRked","very very very very are", "MMM l Mentality Atouan"],
+        matches: [
+            { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
+        ],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 13 }
+    },
+    14: {
+        name: "Xenox Academy",
+        logo: "img/Xenox Academy.jpg",
+        players: ["Dazzlix", "Sojerio", "Scyrox","Kovocc", "V3nera"],
+        matches: [
+            { opponent: "LOTOS Team", opponentLogo: "img/lotos.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
+        ],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 14 }
+    },
+    
 };
 
 const urlParams = new URLSearchParams(window.location.search);
