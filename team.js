@@ -93,7 +93,7 @@ const teamsData = {
     10: {
         name: "Willow team",
         logo: "img/willow2.jpg",
-        players: ["sk1nw0rk", "praker ", "k1smain","st1kon", "mywil", ],
+        players: ["sk1nw0rk", "praker ", "kismain","st1kon","Makl0n", "mywil", ],
         matches: [
             { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 0, date: "09.01.2025", stage: "1/4" }
         ],

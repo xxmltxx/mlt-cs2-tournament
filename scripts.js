@@ -148,11 +148,12 @@ const teamsData = {
     points: 0,
     rank: 9,
     players: [
-      { name: "sk1nw0rk", photo: "img/player-photo.jpg" },
-      { name: "praker", photo: "img/player-photo.jpg" },
-      { name: "k1smain", photo: "img/player-photo.jpg" },
-      { name: "st1kon", photo: "img/player-photo.jpg" },
-      { name: "mywil", photo: "img/player-photo.jpg" },
+      { name: "sk1nw0rk", photo: "img/sk1nw0rk.jpg" },
+      { name: "praker", photo: "img/praker.jpg" },
+      { name: "kismain", photo: "img/kismain.jpg" },
+      { name: "st1kon", photo: "img/st1kon.jpg" },
+      { name: "mywil", photo: "img/myw1l.jpg" },
+      { name: "Makl0n", photo: "img/Makl0n.jpg" },
       
     ]
   },
