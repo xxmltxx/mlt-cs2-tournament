@@ -92,7 +92,7 @@ const teamsData = {
     },
     10: {
         name: "Willow team",
-        logo: "img/Willow team.jpg",
+        logo: "img/willow2.jpg",
         players: ["sk1nw0rk", "praker ", "k1smain","st1kon", "mywil", ],
         matches: [
             { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 0, date: "09.01.2025", stage: "1/4" }
@@ -131,7 +131,7 @@ const teamsData = {
         logo: "img/Xenox Academy.jpg",
         players: ["Dazzlix", "Sojerio", "Scyrox","Kovocc", "V3nera"],
         matches: [
-            { opponent: "Willow Team", opponentLogo: "img/Willow Team.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
+            { opponent: "Willow Team", opponentLogo: "img/willow2.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
         ],
         stats: { wins: 0, losses: 0, winrate: "0%", rating: 14 }
     },
