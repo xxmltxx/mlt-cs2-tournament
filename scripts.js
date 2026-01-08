@@ -140,6 +140,86 @@ const teamsData = {
       { name: "Macken", photo: "img/player-photo.jpg" }
     ]
   },
+  10: {
+    name: "Willow team",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "sk1nw0rk", photo: "img/player-photo.jpg" },
+      { name: "praker", photo: "img/player-photo.jpg" },
+      { name: "k1smain", photo: "img/player-photo.jpg" },
+      { name: "st1kon", photo: "img/player-photo.jpg" },
+      { name: "mywil", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+  11: {
+    name: "LEGENDS5",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "d1sc0nn3ct", photo: "img/player-photo.jpg" },
+      { name: "D1rolzy", photo: "img/player-photo.jpg" },
+      { name: "fanchik", photo: "img/player-photo.jpg" },
+      { name: "YoUttRuE", photo: "img/player-photo.jpg" },
+      { name: "minor", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+  12: {
+    name: "Xenox Team",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "Perf", photo: "img/player-photo.jpg" },
+      { name: "zefir", photo: "img/player-photo.jpg" },
+      { name: "ikeb", photo: "img/player-photo.jpg" },
+      { name: "krystal", photo: "img/player-photo.jpg" },
+      { name: "l1tsh0t", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+  14: {
+    name: "Xenox Academy",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "Dazzlix", photo: "img/player-photo.jpg" },
+      { name: "Sojerio", photo: "img/player-photo.jpg" },
+      { name: "Scyrox", photo: "img/player-photo.jpg" },
+      { name: "Kovocc", photo: "img/player-photo.jpg" },
+      { name: "V3nera", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+  13: {
+    name: "Team 61",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "farrrr", photo: "img/player-photo.jpg" },
+      { name: "lov3zzy", photo: "img/player-photo.jpg" },
+      { name: "VaRked", photo: "img/player-photo.jpg" },
+      { name: "very very very very are", photo: "img/player-photo.jpg" },
+      { name: "MMM l Mentality Atouan", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
 };
 
 function showRoster(teamId) {

@@ -131,7 +131,7 @@ const teamsData = {
         logo: "img/Xenox Academy.jpg",
         players: ["Dazzlix", "Sojerio", "Scyrox","Kovocc", "V3nera"],
         matches: [
-            { opponent: "LOTOS Team", opponentLogo: "img/lotos.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
+            { opponent: "Willow Team", opponentLogo: "img/Willow Team.jpg", myScore: 0, oppScore: 0, date: "09.01.2026", stage: "1/4" }
         ],
         stats: { wins: 0, losses: 0, winrate: "0%", rating: 14 }
     },

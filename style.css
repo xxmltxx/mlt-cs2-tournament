@@ -2732,3 +2732,12 @@ footer .container {
   color: #7f8dff;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px; /* размер логотипа */
+}
