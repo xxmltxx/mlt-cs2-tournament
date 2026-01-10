@@ -63,7 +63,7 @@ const teamsData = {
     ]
   },
   5: {
-    name: "Bezdarrez Team",
+    name: "Bezdarez Team",
     stats: "0-1 (0 очков)",
     wins: 0,
     losses: 1,
