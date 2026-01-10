@@ -2742,35 +2742,7 @@ header {
     height: 40px; /* размер логотипа */
 }
 
-.main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* три колонки */
-  height: 100vh;
-}
 
-.roster,
-.stats {
-  overflow: hidden;          /* без скролла, блок подгоняется под высоту окна */
-}
-
-.matches {
-  display: flex;
-  flex-direction: column;
-}
-
-.matches-list {
-  margin-top: 16px;          /* отступ от заголовка "Матчи" */
-  flex: 1;
-  overflow-y: auto;          /* отдельный скролл только у матчей */
-  padding-right: 8px;
-}
-.team-details-content {
-  display: grid;
-  grid-template-columns: 1.2fr 2fr 1.2fr;
-  gap: 24px;
-  height: calc(100vh - 160px);
-  align-items: start; /* все колонки прижаты к верху */
-}
 
 
 /* левая и правая колонки без скролла */
@@ -2794,3 +2766,4 @@ header {
   overflow-y: auto;
   padding-right: 8px;    /* чтобы скролл не резал контент */
 }
+
