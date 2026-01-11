@@ -2,9 +2,9 @@ const teamsData = {
   1: {
     name: "Team Wol2nt",
     stats: "3-0 (150 очков)",
-    wins: 3,
+    wins: 6,
     losses: 0,
-    points: 150,
+    points: 300,
     rank: 1,
     players: [
       { name: "kas11k", photo: "img/player-photo.jpg" },
