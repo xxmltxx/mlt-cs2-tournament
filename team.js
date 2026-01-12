@@ -9,8 +9,9 @@ const teamsData = {
             { opponent: "2Play", opponentLogo: "img/2play.jpg", myScore: 2, oppScore: 0, date: "26.12.2025", stage: "финал" },
             { opponent: "Team 61", opponentLogo: "img/Team 61.jpg", myScore: 2, oppScore: 0, date: "09.01.2026", stage: "1/4" },
             { opponent: "Lotos Team", opponentLogo: "img/lotos.jpg", myScore: 0, oppScore: 0, date: "10.01.2026", stage: "1/2" },
+            { opponent: "Xenox Team", opponentLogo: "img/Xenox Team.jpg", myScore: 2, oppScore: 0, date: "11.01.2026", stage: "Финал" },
         ],
-        stats: { wins: 4, losses: 0, winrate: "100%", rating: 1 }
+        stats: { wins: 6, losses: 0, winrate: "100%", rating: 1 }
     },
     2: {
         name: "2Play🥈",
@@ -44,7 +45,7 @@ const teamsData = {
             { opponent: "2Play", opponentLogo: "img/2play.jpg", myScore: 0, oppScore: 2, date: "23.12.2025", stage: "1/2" },
             { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 0, oppScore: 2, date: "25.12.2025", stage: "3а 3 место" }
         ],
-        stats: { wins: 1, losses: 2, winrate: "33%", rating: 4 }
+        stats: { wins: 1, losses: 2, winrate: "33%", rating: 7 }
     },
     5: {
         name: "Bezdarez Team",
@@ -89,8 +90,9 @@ const teamsData = {
             { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 1, oppScore: 2, date: "19.12.2025", stage: "1/4" },
             { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 2, oppScore: 1, date: "09.01.2026", stage: "1/4" },
             { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 0, oppScore: 0, date: "10.01.2026", stage: "1/2" },
+            { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 1, oppScore: 2, date: "11.01.2026", stage: "3-место" },
         ],
-        stats: { wins: 1, losses: 1, winrate: "50%", rating: 7 }
+        stats: { wins: 1, losses: 3, winrate: "25%", rating: 6 }
     },
     10: {
         name: "Willow team",
@@ -116,9 +118,10 @@ const teamsData = {
         players: ["Perf", "zefir", "ikeb","krystal", "l1tsh0t"],
         matches: [
             { opponent: "LEGENDS5", opponentLogo: "img/LEGENDS5.jpg", myScore: 2, oppScore: 0, date: "09.01.2026", stage: "1/4" },
-             { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 0, date: "10.01.2026", stage: "1/2" }
+             { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 0, date: "10.01.2026", stage: "1/2" },
+             { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 0, oppScore: 2, date: "11.01.2026", stage: "финал" }
         ],
-        stats: { wins: 1, losses: 0, winrate: "100%", rating: 12 }
+        stats: { wins: 2, losses: 1, winrate: "66%", rating: 5 }
     },
     13: {
         name: "Team 61",
@@ -135,9 +138,10 @@ const teamsData = {
         players: ["Dazzlix", "Sojerio", "Scyrox","Kovocc", "V3nera"],
         matches: [
             { opponent: "Willow Team", opponentLogo: "img/willow2.jpg", myScore: 2, oppScore: 0, date: "09.01.2026", stage: "1/4" },
-            { opponent: "Xenox Team", opponentLogo: "img/Xenox Team.jpg", myScore: 0, oppScore: 0, date: "10.01.2026", stage: "1/2" }
+            { opponent: "Xenox Team", opponentLogo: "img/Xenox Team.jpg", myScore: 0, oppScore: 2, date: "10.01.2026", stage: "1/2" },
+             { opponent: "Lotos Team", opponentLogo: "img/lotos.jpg", myScore: 2, oppScore: 1, date: "11.01.2026", stage: " 3-место" }
         ],
-        stats: { wins: 1, losses: 0, winrate: "100%", rating: 14 }
+        stats: { wins: 2, losses: 1, winrate: "66%", rating: 6 }
     },
     
 };

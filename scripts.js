@@ -1,7 +1,7 @@
 const teamsData = {
   1: {
     name: "Team Wol2nt",
-    stats: "3-0 (150 очков)",
+    stats: "6-0 (300 очков)",
     wins: 6,
     losses: 0,
     points: 300,
@@ -95,9 +95,9 @@ const teamsData = {
   },
   7: {
     name: "Lotos Team",
-    stats: "0-1 (0 очков)",
-    wins: 0,
-    losses: 1,
+    stats: "1-3 (0 очков)",
+    wins: 1,
+    losses: 3,
     points: 0,
     rank: 7,
     players: [
@@ -144,7 +144,7 @@ const teamsData = {
     name: "Willow team",
     stats: "0-0 (0 очков)",
     wins: 0,
-    losses: 0,
+    losses: 1,
     points: 0,
     rank: 9,
     players: [
@@ -161,7 +161,7 @@ const teamsData = {
     name: "LEGENDS5",
     stats: "0-0 (0 очков)",
     wins: 0,
-    losses: 0,
+    losses: 1,
     points: 0,
     rank: 9,
     players: [
@@ -175,9 +175,9 @@ const teamsData = {
   },
   12: {
     name: "Xenox Team",
-    stats: "0-0 (0 очков)",
-    wins: 0,
-    losses: 0,
+    stats: "2-1 (25 очков)",
+    wins: 2,
+    losses: 1,
     points: 0,
     rank: 9,
     players: [
@@ -191,9 +191,9 @@ const teamsData = {
   },
   14: {
     name: "Xenox Academy",
-    stats: "0-0 (0 очков)",
-    wins: 0,
-    losses: 0,
+    stats: "2-1 (25 очков)",
+    wins: 2,
+    losses: 1,
     points: 0,
     rank: 9,
     players: [
@@ -207,9 +207,9 @@ const teamsData = {
   },
   13: {
     name: "Team 61",
-    stats: "0-0 (0 очков)",
+    stats: "0-1 (0 очков)",
     wins: 0,
-    losses: 0,
+    losses: 1,
     points: 0,
     rank: 9,
     players: [

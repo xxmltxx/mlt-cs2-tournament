@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLT | CS2 TOURNAMENT</title>
+    <title>История матчей | MLT CS2 TOURNAMENT</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo.jpg">
-
 </head>
 <body>
     <header>
-        <nav class="container">
+        <nav>
             <a href="index.html" class="logo-container">
                 <div class="header-logo">
                     <img src="img/logo.jpg" alt="MLT Logo">
                 </div>
-                <div class="logo">MLT | CS2</div>
+                <span class="logo">MLT | CS2</span>
             </a>
-            
-            <ul class="nav-links">
-                <li><a href="teams.html">Команды</a></li>
-                <li><a href="tournaments.html">Турниры</a></li>
-                <li><a href="matches.html">Матчи</a></li>
-                <li><a href="mlt-rating.html">MLT рейтинг</a></li>
-                <li><a href="rules.html">Правила</a></li>
-               
-                
-                
-            </ul>
+            <div class="nav-links">
+                <a href="teams.html"class="active">Команды</a>
+                <a href="tournaments.html">Турниры</a>
+                <a href="matches.html" >Матчи</a>
+                <a href="mlt-rating.html">MLT рейтинг</a>
+                <a href="rules.html">Правила</a>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
+
+<section class="hero">
         <div class="container">
             <h1 class="hero-title">MLT | CS2 TOURNAMENT</h1>
             <p class="hero-subtitle">Профессиональная турнирная платформа нового поколения</p>
@@ -41,10 +37,10 @@
 
     <section class="matches">
   <div class="matches-header-line">
-    <h2 class="matches-title">
+    <h1 class="matches-title">
       <span class="matches-icon">🎮</span>
       Предстоящие матчи
-    </h2>
+    </h1>
 
     
   </div>
@@ -112,7 +108,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Команда 2 -->
             <div class="team-card">
                 <div class="team-card-inner">
@@ -200,74 +195,87 @@
     </div>
 </section>
 
-    <section class="news-section">
-        <div class="container">
-            <div class="section-header">
-                <i class="fas fa-newspaper"></i>
-                <h2>Новости</h2>
-            </div>
-            
-            <div class="news-grid">
-                <div class="news-card">
-  <div class="news-card-inner">
-    <div class="news-image">
-      <img src="img/champion.jpg" alt="">
-    </div>
-
-    <div class="news-content">
-      <p class="news-text">И вот они, наши долгожданные чемпионы! С гордостью объявляем победителей MLT MAJOR - это команда Team wol2nt! Они пронесли невероятный путь и абсолютно заслужили этот титул!</p>
-      <div class="news-date">26.12.2025 22:20</div>
-    </div>
-  </div>
-</div>
-
-
-                <div class="news-card">
-                    <div class="news-card-inner">
-                        <div class="news-image">
-                            <img src="img/anubis.jpg" alt="HW Team - бронза MLT MAJOR!">
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-title">Официально: -Train; +Anubis
-!</h3>
-                            <p class="news-description">Вместо Train – Anubis. Карта вернется в маппул спустя полгода. Ее убирали в июле 2025 года, вместе со стартом третьего сезона премьер-матчмейкинга.</p>
-                            <div class="news-date">24.12.2025 19:39</div>
-                        </div>
+<section class="news-section">
+    <div class="container">
+        <div class="section-header">
+            <i class="fas fa-newspaper"></i>
+            <h2>Новости</h2>
+        </div>
+        
+        <div class="news-grid">
+            <!-- Новость 1 -->
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <div class="news-image">
+                        <img src="img/winner.jpg" alt="MLT MAJOR">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-badge">🏆 ПОБЕДА</div>
+                        <h3 class="news-title">Team wol2nt - чемпионы MLT Cup</h3>
+                        <p class="news-text">Официально объявляем победителей MLT CUP! Ими становятся Team Wol2nt! Это уже второй турнир подряд, где эта команда одерживает победу на нашем турнире. Неудивительно, что именно они занимают первую строчку в нашем рейтинге. Этот состав, несомненно, впишет свое имя в историю MLT!</p>
+                        <div class="news-date">13.01.2026</div>
                     </div>
                 </div>
+            </div>
 
-                <div class="news-card">
-                    <div class="news-card-inner">
-                        <div class="news-image">
-                            <img src="img/mltcup1.jpg" alt="MLT CUP стартует">
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-title">🔥 Сегодня – день, которого мы все ждали!</h3>
-                            <p class="news-description">Стали известны пары четвертьфиналистов MLT Cup!
+            <!-- Новость 2 -->
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <div class="news-image">
+                        <img src="img/anubis.jpg" alt="Anubis">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-badge">⚙️ ОБНОВЛЕНИЕ</div>
+                        <h3 class="news-title">-Train; +Anubis в маппуле</h3>
+                        <p class="news-text">Официально: вместо Train вернулась Anubis. Карта отсутствовала полгода и готова к новым баттлам.</p>
+                        <div class="news-date">09.01.2026</div>
+                    </div>
+                </div>
+            </div>
 
-Уже совсем скоро, 9 января, стартует долгожданный MLT Cup! Турнир продлится три дня подряд, и именно в первый день, 9 января, пройдут захватывающие четвертьфинальные матчи.</p>
-                            <div class="news-date">07.01.2026 18:00</div>
-                        </div>
+            <!-- Новость 3 -->
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <div class="news-image">
+                        <img src="img/mvp.jpg" alt="MLT Cup">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-badge">🔥 MVP</div>
+                        <h3 class="news-title">С гордостью объявляем, что MVP нашего турнира MLT CUP становится Eby4uGyn!</h3>
+                        <p class="news-text">Он продемонстрировал выдающуюся игру на протяжении всего турнира , показав средний показатель K/D 1.25. Поздравляем Eby4uGyn с заслуженным чемпионством на нашем турнире!</p>
+                        <div class="news-date">13.01.2026</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
-    <div class="container">
-        <div class="social-links">
-            <a href="https://www.twitch.tv/mlt_cs2" title="Twitch" target="_blank">
-                <i class="fab fa-twitch"></i>
-            </a>
-            <a href="https://t.me/MLT_CS2" title="Telegram" target="_blank">
-                <i class="fab fa-telegram"></i>
-            </a>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.twitch.tv" title="Twitch" target="_blank">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://t.me" title="Telegram" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 MLT CS2 Tournament</p>
         </div>
-        <p>&copy; 2025 MLT CS2 Tournament</p>
-    </div>
-</footer>
-
+    </footer>
     <div class="snow-layer"></div>
+
 </body>
 </html>
