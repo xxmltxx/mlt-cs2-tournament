@@ -148,12 +148,12 @@ const teamsData = {
     points: 0,
     rank: 9,
     players: [
-      { name: "sk1nw0rk", photo: "img/sk1nw0rk.jpg" },
-      { name: "praker", photo: "img/praker.jpg" },
-      { name: "kismain", photo: "img/kismain.jpg" },
-      { name: "st1kon", photo: "img/st1kon.jpg" },
-      { name: "mywil", photo: "img/myw1l.jpg" },
-      { name: "Makl0n", photo: "img/Makl0n.jpg" },
+      { name: "sk1nw0rk  Daniil 16 y.o IGL", photo: "img/player-photo.jpg" },
+      { name: "Varadka  Kirill 18 y.o Rifler", photo: "img/player-photo.jpg" },
+      { name: "xsenzo  Sergey 14 y.o Entry", photo: "img/player-photo.jpg" },
+      { name: "selz1sh  Nikita 16 y.o Rifler", photo: "img/player-photo.jpg" },
+      { name: "Varadka  Kirill 18 y.o Rifler", photo: "img/player-photo.jpg" },
+      
       
     ]
   },
@@ -175,7 +175,7 @@ const teamsData = {
   },
   12: {
     name: "Xenox Team",
-    stats: "2-1 (25 очков)",
+    stats: "2-1 (75 очков)",
     wins: 2,
     losses: 1,
     points: 0,
@@ -191,7 +191,7 @@ const teamsData = {
   },
   14: {
     name: "Xenox Academy",
-    stats: "2-1 (25 очков)",
+    stats: "2-1 (75 очков)",
     wins: 2,
     losses: 1,
     points: 0,

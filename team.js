@@ -1,7 +1,12 @@
 const teamsData = {
     1: {
-        name: "Wol2nt Team🏆",
+        name: "Wol2nt Team",
         logo: "img/Wol2nt Team.jpg",
+       trophies: [
+    { title: "MLT MAJOR", date: "Декабрь 2025", image: "img/major.jpg" },
+    { title: "MLT CUP", date: "Январь 2026", image: "img/rubok.jpg" }
+]
+,
         players: ["kas11k", "deserted", "Chapickka", "FishyO", "Alma3ik"],
         matches: [
             { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 2, oppScore: 1, date: "17.12.2025", stage: "1/4" },
@@ -13,6 +18,7 @@ const teamsData = {
         ],
         stats: { wins: 6, losses: 0, winrate: "100%", rating: 1 }
     },
+   
     2: {
         name: "2Play🥈",
         logo: "img/2play.jpg",
@@ -97,7 +103,7 @@ const teamsData = {
     10: {
         name: "Willow team",
         logo: "img/willow2.jpg",
-        players: ["sk1nw0rk", "praker ", "kismain","st1kon","Makl0n", "mywil", ],
+        players: ["sk1nw0rk", "Varadka  ", "xsenzo","selz1sh","DayHe",  ],
         matches: [
             { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 2, date: "09.01.2025", stage: "1/4" }
         ],
@@ -151,7 +157,22 @@ const teamId = parseInt(urlParams.get('id')) || 1;
 const team = teamsData[teamId];
 
 if (team) {
-    document.getElementById('teamName').textContent = team.name;
+    // Генерируем трофеи с изображениями
+const trophiesHTML = team.trophies 
+    ? team.trophies.map(t => `
+        <div class="trophy-item" title="${t.title} - ${t.date}">
+            <img src="${t.image}" alt="${t.title}">
+        </div>
+    `).join('')
+    : '';
+
+document.getElementById('teamName').innerHTML = `
+    ${team.name}
+    ${trophiesHTML ? `<div class="trophies-container">${trophiesHTML}</div>` : ''}
+`;
+
+
+
     document.getElementById('teamLogo').src = team.logo;
     
     document.getElementById('teamStats').innerHTML = `
