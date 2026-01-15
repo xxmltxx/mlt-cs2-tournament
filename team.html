@@ -11,21 +11,31 @@
     <div class="snow-layer"></div>
     
     <header>
-        <nav>
-            <a href="index.html" class="logo-container">
-                <div class="header-logo"><img src="img/logo.jpg" alt="logo"></div>
-                <span class="logo">MLT | CS2</span>
-            </a>
-            <ul class="nav-links">
-               <li><a href="teams.html">Команды</a></li>
-                <li><a href="tournaments.html">Турниры</a></li>
-                <li><a href="matches.html">Матчи</a></li>
-                <li><a href="mlt-rating.html">MLT рейтинг</a></li>
-                <li><a href="rules.html">Правила</a></li>
-               
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html" class="logo-container">
+            <div class="header-logo">
+                <img src="img/logo.jpg" alt="MLT Logo">
+            </div>
+            <span class="logo">MLT | CS2</span>
+        </a>
+        
+        <!-- Гамбургер СНАРУЖИ nav-links -->
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Меню ссылок -->
+        <div class="nav-links">
+            <a href="teams.html"class="active">Команды</a>
+            <a href="tournaments.html">Турниры</a>
+            <a href="matches.html">Матчи</a>
+            <a href="mlt-rating.html">MLT рейтинг</a>
+            <a href="rules.html">Правила</a>
+        </div>
+    </nav>
+</header>
 
     <section class="team-details-section">
         <div class="container">
@@ -60,5 +70,39 @@
 
     <script src="team.js"></script>
      <div class="snow-layer"></div>
+      <script>
+    const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Закрываем меню при клике на ссылку
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
+// Закрываем меню при клике вне меню
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('nav')) {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
+});
+
+// Закрываем меню при изменении размера окна
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
+});
+
+</script>
 </body>
 </html>

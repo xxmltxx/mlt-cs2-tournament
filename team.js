@@ -3,8 +3,8 @@ const teamsData = {
         name: "Wol2nt Team",
         logo: "img/Wol2nt Team.jpg",
        trophies: [
-    { title: "MLT MAJOR", date: "Декабрь 2025", image: "img/major.jpg" },
-    { title: "MLT CUP", date: "Январь 2026", image: "img/rubok.jpg" }
+    { title: "MLT MAJOR", date: "Декабрь 2025", image: "img/imgcupmajor.jpg" },
+    { title: "MLT CUP", date: "Январь 2026", image: "img/inmgcup.jpg" }
 ]
 ,
         players: ["kas11k", "deserted", "Chapickka", "FishyO", "Alma3ik"],

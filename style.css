@@ -3214,3 +3214,252 @@ header {
     height: 65px;
   }
 }
+
+
+/* ============================================
+МОБИЛЬНЫЙ АДАПТИВ - ИСПРАВЛЕННЫЙ ВАРИАНТ
+============================================ */
+
+/* Гамбургер кнопка - ВСЕГДА видна на мобилке */
+.menu-toggle {
+    display: none !important;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    background: none;
+    border: none;
+    z-index: 1001;
+    padding: 0.5rem;
+    color: #3b82f6;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #3b82f6;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* На мобильных (до 768px) */
+@media (max-width: 768px) {
+    /* Показываем гамбургер ВСЕГДА */
+    .menu-toggle {
+        display: flex !important;
+    }
+
+    /* Переделываем nav */
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Логотип занимает место */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 1;
+    }
+
+    /* DROPDOWN МЕНЮ В ПРАВОМ УГЛУ */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 1rem;
+        left: auto;
+        width: auto;
+        min-width: 200px;
+        max-width: 280px;
+        background: rgba(10, 15, 31, 0.98);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.5rem;
+        border: 1px solid rgba(59, 130, 246, 0.4);
+        border-radius: 12px;
+        z-index: 999;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        animation: slideDownRight 0.3s ease forwards;
+    }
+
+    @keyframes slideDownRight {
+        from {
+            opacity: 0;
+            transform: translateY(-10px) translateX(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+        }
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.95rem;
+        border-radius: 8px;
+        background: rgba(59, 130, 246, 0.1);
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        transition: all 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+        background: rgba(59, 130, 246, 0.2);
+        border-color: #3b82f6;
+        transform: translateX(5px);
+    }
+
+    /* ТАБЛИЦА РЕЙТИНГА НА МОБИЛКЕ - ВИДНА ПОЛНОСТЬЮ */
+    .rating-table-container {
+        margin: 40px auto 20px auto;
+        max-width: 100%;
+        padding: 0 10px;
+        overflow-x: auto;
+    }
+
+    .rating-table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+        background: rgba(0, 50, 100, 0.2);
+        border: 3px solid #00aaff;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .rating-table thead {
+        background: linear-gradient(90deg, rgba(0, 170, 255, 0.3) 0%, rgba(0, 100, 150, 0.2) 100%);
+        border-bottom: 3px solid #00aaff;
+    }
+
+    .rating-table th {
+        color: #00aaff;
+        padding: 14px 10px;
+        text-align: left;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    .rating-row {
+        border-bottom: 2px solid rgba(0, 170, 255, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .rating-row:hover {
+        background: rgba(0, 170, 255, 0.15);
+    }
+
+    .rating-row td {
+        color: #ffffff;
+        padding: 14px 10px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .team-logo-box {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+    }
+
+    .team-logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .team-name {
+        min-width: 180px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* Остальные элементы на мобилке */
+    .hero {
+        margin-top: 100px;
+        padding: 3rem 1.5rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .teams-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .teams-grid-hltv {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: flex !important;
+    }
+
+    .menu-toggle span {
+        width: 22px;
+    }
+
+    nav {
+        padding: 0 0.5rem;
+    }
+
+    .nav-links {
+        top: 60px;
+        right: 0.5rem;
+        min-width: 170px;
+    }
+
+    .rating-table {
+        min-width: 500px;
+    }
+
+    .rating-table th,
+    .rating-table td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 2rem 0.5rem;
+    }
+}
