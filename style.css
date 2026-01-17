@@ -3463,3 +3463,603 @@ header {
         padding: 2rem 0.5rem;
     }
 }
+
+/* ============================================
+ЛОГОТИПЫ КОМАНД - УВЕЛИЧЕНЫ НА 30%
+============================================ */
+
+@media (min-width: 769px) {
+    .match-logo {
+        width: 104px !important;  /* было 80px, теперь +30% */
+        height: 104px !important;
+        flex-shrink: 0 !important;
+        border-radius: 12px !important;
+        border: 2px solid rgba(59, 130, 246, 0.4) !important;
+        object-fit: cover !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .match-logo {
+        width: 65px !important;  /* было 50px, теперь +30% */
+        height: 65px !important;
+        flex-shrink: 0 !important;
+        border-radius: 8px !important;
+        border: 2px solid rgba(59, 130, 246, 0.4) !important;
+        object-fit: cover !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .match-logo {
+        width: 58px !important;  /* было 45px, теперь +30% */
+        height: 58px !important;
+    }
+}
+/* ============================================
+НАЗВАНИЕ КОМАНДЫ ВНУТРИ ЛОГОТИПА
+============================================ */
+
+@media (min-width: 769px) {
+    .match-team-left,
+    .match-team-right {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0 !important;
+        position: relative !important;
+    }
+
+    .match-team-left {
+        justify-content: flex-end !important;
+    }
+
+    .match-team-right {
+        justify-content: flex-start !important;
+    }
+
+    /* Логотип как контейнер */
+    .match-logo {
+        width: 130px !important;
+        height: 130px !important;
+        border-radius: 15px !important;
+        border: 3px solid rgba(59, 130, 246, 0.5) !important;
+        object-fit: cover !important;
+        flex-shrink: 0 !important;
+        position: relative !important;
+    }
+
+    /* Название ВНУТРИ логотипа */
+    .match-team-name {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: rgba(0, 0, 0, 0.85) !important;
+        color: #f1f5f9 !important;
+        font-size: 0.9rem !important;
+        font-weight: 700 !important;
+        padding: 0.5rem 0.3rem !important;
+        text-align: center !important;
+        border-bottom-left-radius: 12px !important;
+        border-bottom-right-radius: 12px !important;
+        z-index: 10 !important;
+    }
+
+    /* Левая команда */
+    .match-team-left {
+        position: relative !important;
+    }
+
+    .match-team-left .match-logo {
+        order: 1 !important;
+    }
+
+    .match-team-left .match-team-name {
+        order: 2 !important;
+    }
+
+    /* Правая команда */
+    .match-team-right {
+        position: relative !important;
+    }
+
+    .match-team-right .match-logo {
+        order: 1 !important;
+    }
+
+    .match-team-right .match-team-name {
+        order: 2 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .match-team-left,
+    .match-team-right {
+        position: relative !important;
+        gap: 0 !important;
+    }
+
+    .match-logo {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 12px !important;
+    }
+
+    .match-team-name {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: rgba(0, 0, 0, 0.9) !important;
+        color: #f1f5f9 !important;
+        font-size: 0.7rem !important;
+        font-weight: 600 !important;
+        padding: 0.3rem 0.2rem !important;
+        text-align: center !important;
+        border-bottom-left-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+    }
+}
+/* ============================================
+ТЕКСТ ПОД ЛОГОТИПОМ (СНАРУЖИ)
+============================================ */
+
+@media (min-width: 769px) {
+    .match-team-left,
+    .match-team-right {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+    }
+
+    .match-logo {
+        width: 130px !important;
+        height: 130px !important;
+        border-radius: 15px !important;
+        border: 3px solid rgba(59, 130, 246, 0.5) !important;
+        object-fit: cover !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Название ПОД логотипом */
+    .match-team-name {
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        color: #f1f5f9 !important;
+        text-align: center !important;
+        padding: 0 0.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .match-team-left,
+    .match-team-right {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.3rem !important;
+    }
+
+    .match-logo {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 12px !important;
+        border: 2px solid rgba(59, 130, 246, 0.5) !important;
+    }
+
+    .match-team-name {
+        font-size: 0.75rem !important;
+        font-weight: 600 !important;
+        color: #f1f5f9 !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .match-logo {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .match-team-name {
+        font-size: 0.7rem !important;
+    }
+}
+/* ============================================
+ТЕКСТ СНАРУЖИ ПОД РАМКОЙ ЛОГОТИПА
+============================================ */
+
+@media (min-width: 769px) {
+    .match-team-left,
+    .match-team-right {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.8rem !important;  /* отступ между логотипом и текстом */
+    }
+
+    .match-logo {
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 18px !important;
+        border: 3px solid rgba(59, 130, 246, 0.5) !important;
+        object-fit: cover !important;
+        flex-shrink: 0 !important;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* Текст СНАРУЖИ - обычный элемент, не absolute */
+    .match-team-name {
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        color: #f1f5f9 !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: none !important;
+        position: static !important;  /* убираем absolute */
+        max-width: 150px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .match-team-left,
+    .match-team-right {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+    }
+
+    .match-logo {
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 14px !important;
+        border: 2px solid rgba(59, 130, 246, 0.5) !important;
+    }
+
+    .match-team-name {
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+        color: #f1f5f9 !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: none !important;
+        position: static !important;
+        max-width: 100px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .match-logo {
+        width: 85px !important;
+        height: 85px !important;
+    }
+
+    .match-team-name {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* ============================================
+ТЕКСТЫ НА СТРАНИЦЕ МАТЧЕЙ - БОЛЬШЕ РАЗМЕР
+============================================ */
+
+@media (min-width: 769px) {
+    /* Заголовок страницы */
+    .section-header h1 {
+        font-size: 3rem !important;
+    }
+
+    /* Подзаголовки (Результаты MLT Major) */
+    .matches-subtitle {
+        font-size: 1.3rem !important;
+        font-weight: 500 !important;
+    }
+
+    /* Дата матча */
+    .match-date {
+        font-size: 1.1rem !important;
+        font-weight: 500 !important;
+    }
+
+    /* Названия команд */
+    .match-team-name {
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+    }
+
+    /* Счёт */
+    .match-score-left,
+    .match-score-right {
+        font-size: 3.2rem !important;
+        font-weight: 700 !important;
+    }
+
+    .match-separator {
+        font-size: 2.6rem !important;
+    }
+
+    /* Бейдж статуса */
+    .match-status-badge {
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Заголовок на мобилке */
+    .section-header h1 {
+        font-size: 2rem !important;
+    }
+
+    .matches-subtitle {
+        font-size: 1.1rem !important;
+    }
+
+    .match-date {
+        font-size: 0.95rem !important;
+    }
+
+    .match-team-name {
+        font-size: 0.95rem !important;
+        font-weight: 700 !important;
+    }
+
+    .match-score-left,
+    .match-score-right {
+        font-size: 2rem !important;
+    }
+
+    .match-separator {
+        font-size: 1.6rem !important;
+    }
+
+    .match-status-badge {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h1 {
+        font-size: 1.6rem !important;
+    }
+
+    .match-team-name {
+        font-size: 0.85rem !important;
+    }
+
+    .match-score-left,
+    .match-score-right {
+        font-size: 1.6rem !important;
+    }
+}
+/* ============================================
+ФИНАЛЬНАЯ МОБИЛЬНАЯ ВЕРСИЯ - КАК НА ПК
+============================================ */
+
+@media (max-width: 768px) {
+    /* Карточка матча */
+    .match-history-card {
+        padding: 1.2rem !important;
+    }
+
+    /* Контейнер команд и счёта */
+    .match-teams {
+        display: grid !important;
+        grid-template-columns: 1fr auto 1fr !important;
+        gap: 1rem !important;
+        align-items: start !important;
+        justify-items: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* ЛЕВАЯ КОМАНДА */
+    .match-team-left {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.6rem !important;
+        grid-column: 1 !important;
+    }
+
+    .match-team-left .match-logo {
+        width: 100px !important;
+        height: 100px !important;
+        order: 1 !important;
+    }
+
+    .match-team-left .match-team-name {
+        order: 2 !important;
+    }
+
+    /* ПРАВАЯ КОМАНДА */
+    .match-team-right {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.6rem !important;
+        grid-column: 3 !important;
+    }
+
+    .match-team-right .match-logo {
+        width: 100px !important;
+        height: 100px !important;
+        order: 1 !important;
+    }
+
+    .match-team-right .match-team-name {
+        order: 2 !important;
+    }
+
+    /* Логотип */
+    .match-logo {
+        border-radius: 14px !important;
+        border: 2px solid rgba(59, 130, 246, 0.5) !important;
+        object-fit: cover !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    /* Название команды */
+    .match-team-name {
+        font-size: 0.95rem !important;
+        font-weight: 700 !important;
+        color: #f1f5f9 !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: none !important;
+        position: static !important;
+        max-width: 100px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* СЧЁТ В ЦЕНТРЕ */
+    .match-score-box {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.6rem !important;
+        grid-column: 2 !important;
+        margin-top: 30px !important;
+    }
+
+    .match-score-left,
+    .match-score-right {
+        font-size: 2.2rem !important;
+        font-weight: 700 !important;
+        color: #3b82f6 !important;
+    }
+
+    .match-separator {
+        font-size: 1.8rem !important;
+        color: #3b82f6 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .match-teams {
+        gap: 0.8rem !important;
+    }
+
+    .match-logo {
+        width: 85px !important;
+        height: 85px !important;
+    }
+
+    .match-team-name {
+        font-size: 0.85rem !important;
+        max-width: 85px !important;
+    }
+
+    .match-score-left,
+    .match-score-right {
+        font-size: 1.8rem !important;
+    }
+
+    .match-separator {
+        font-size: 1.4rem !important;
+    }
+
+    .match-score-box {
+        margin-top: 25px !important;
+    }
+}
+
+/* Увеличение размера текста для страницы правил */
+.rules-section {
+    font-size: 1.1rem; /* Увеличен базовый размер текста */
+}
+
+.rules-section h1 {
+    font-size: 2.5rem;
+}
+
+.rules-section h2 {
+    font-size: 1.8rem;
+}
+
+.rules-article ul li {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.warning-box {
+    font-size: 1.1rem;
+}
+
+/* Стили для гамбургер-меню - должны быть более заметными */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: #00d9ff;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: rgba(10, 25, 47, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    /* Увеличение текста для мобильной версии */
+    .rules-section {
+        font-size: 1.15rem;
+    }
+    
+    .rules-section h1 {
+        font-size: 2rem;
+    }
+    
+    .rules-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .rules-article ul li {
+        font-size: 1.15rem;
+    }
+}

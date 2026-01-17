@@ -36,571 +36,458 @@
     </nav>
 </header>
 
-    <main>
-        <section class="matches-history-section">
-            <div class="container">
-                <div class="section-header">
-                    <i>⚔️</i>
-                    <h1>История матчей</h1>
-                </div>
-                <p class="matches-subtitle">Результаты MLT Major</p>
+   Вижу проблему! Твой HTML использует **старые классы**. Сейчас переделаю ВСЁ с правильными классами. Вот **полный исправленный код `<main>` раздела**:
 
-                <div class="matches-history-list">
+```html
+<main>
+    <section class="matches-history-section">
+        <div class="container">
+            <div class="section-header">
+                <i>⚔️</i>
+                <h1>История матчей</h1>
+            </div>
+            <p class="matches-subtitle">Результаты MLT Major</p>
 
-                    <!-- Матч 1 -->
-                    <div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 16 дек. 2025 г., 20:00</div>
+            <div class="matches-history-list">
+                <!-- Матч 1 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 16 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/HW Team.jpg" alt="HW Team" class="match-logo">
+                            <div class="match-team-name">HW Team</div>
                         </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/HW Team.jpg" alt="HW Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">HW Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0<span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">TEMPLI TEAM</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/TEMPLI TEAM.jpg" alt="TEMPLI TEAM" class="team-logo">
-                                </div>
-                            </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
                         </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">TEMPLI TEAM</div>
+                            <img src="img/TEMPLI TEAM.jpg" alt="TEMPLI TEAM" class="match-logo">
                         </div>
                     </div>
-<div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 17 дек. 2025 г., 20:00</div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Матч 2 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 17 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Bezdarez Team.jpg" alt="Bezdarez Team" class="match-logo">
+                            <div class="match-team-name">Bezdarez Team</div>
                         </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Bezdarez Team.jpg" alt="Bezdarez Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Bezdarez Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">1:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Wol2nt Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="team-logo">
-                                </div>
-                            </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">1</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
                         </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
-                        </div>
-                    </div><div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 18 дек. 2025 г., 20:00</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/2play.jpg" alt="2Play" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">2Play</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">	
-Platina Esports Academy</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Platina Esports Academy.jpg" alt="	
-Platina Esports Academy" class="team-logo">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
-                        </div>
-                    </div><div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 19 дек. 2025 г., 20:00</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/lotos.jpg" alt="LOTOS Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">LOTOS Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">1:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">4otka</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/4otka.jpg" alt="4otka" class="team-logo">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
-                        </div>
-                    </div><div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 22 дек. 2025 г., 20:00</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/HW Team.jpg" alt="HW Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">HW Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">0:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Wol2nt Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="team-logo">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
-                        </div>
-                    </div><div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 23 дек. 2025 г., 20:00</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/2play.jpg" alt="2Play" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">2Play</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">4otka</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/4otka.jpg" alt="4otka" class="team-logo">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
-                        </div>
-                    </div><div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 25 дек. 2025 г., 20:00</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/HW Team.jpg" alt="HW Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">HW Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">4otka</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/4otka.jpg" alt="4otka" class="team-logo">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Wol2nt Team</div>
+                            <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="match-logo">
                         </div>
                     </div>
-                    <!-- Матч 2 -->
-                    <div class="match-history-card">
-                        <div class="match-status-badge">Завершен</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 16 дек. 2025 г., 20:00</div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Матч 3 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 18 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/2play.jpg" alt="2Play" class="match-logo">
+                            <div class="match-team-name">2Play</div>
                         </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/2play.jpg" alt="2Play" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">2Play</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">0:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Wol2nt Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="team-logo">
-                                </div>
-                            </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
                         </div>
-                        
-                        
-
-                        <div class="match-footer">
-                            <div class="map-info"></div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Platina Esports</div>
+                            <img src="img/Platina Esports Academy.jpg" alt="Platina Esports" class="match-logo">
                         </div>
                     </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
 
- <p class="matches-subtitle"></p>
-                       <p class="matches-subtitle">Результаты MLT Cup</p>
+                <!-- Матч 4 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 19 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/lotos.jpg" alt="LOTOS Team" class="match-logo">
+                            <div class="match-team-name">LOTOS Team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">1</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">4otka</div>
+                            <img src="img/4otka.jpg" alt="4otka" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Матч 5 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 22 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/HW Team.jpg" alt="HW Team" class="match-logo">
+                            <div class="match-team-name">HW Team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">0</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Wol2nt Team</div>
+                            <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Матч 6 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 23 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/2play.jpg" alt="2Play" class="match-logo">
+                            <div class="match-team-name">2Play</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">4otka</div>
+                            <img src="img/4otka.jpg" alt="4otka" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Матч 7 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 25 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/HW Team.jpg" alt="HW Team" class="match-logo">
+                            <div class="match-team-name">HW Team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">4otka</div>
+                            <img src="img/4otka.jpg" alt="4otka" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Матч 8 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Завершен</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 16 дек. 2025 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/2play.jpg" alt="2Play" class="match-logo">
+                            <div class="match-team-name">2Play</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">0</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Wol2nt Team</div>
+                            <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="matches-subtitle">Результаты MLT Cup</p>
+
+            <div class="matches-history-list">
+                <!-- Cup Матч 1 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">1/4</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 9 янв. 2026 г., 16:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Team 61.jpg" alt="Team 61" class="match-logo">
+                            <div class="match-team-name">Team 61</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">0</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Wol2nt Team</div>
+                            <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Cup Матч 2 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">1/4</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 9 янв. 2026 г., 20:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Bezdarez Team.jpg" alt="Bezdarez Team" class="match-logo">
+                            <div class="match-team-name">Bezdarez Team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">1</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Lotos Team</div>
+                            <img src="img/lotos.jpg" alt="Lotos Team" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Cup Матч 3 -->
+               
                     <div class="match-history-card">
-                        <div class="match-status-badge">1/4</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 9 янв. 2026 г., 16:00</div>
+                    <div class="match-status-badge">1/4</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 9 янв. 2026 г., 16:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Xenox Team.jpg" alt="Xenox Team" class="match-logo">
+                            <div class="match-team-name">Xenox Team</div>
                         </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">LEGENDS5</div>
+                            <img src="img/LEGENDS5.jpg" alt="LEGENDS5" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
 
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Team 61.jpg" alt="Team 61" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Team 61</h3>
-                                </div>
-                            </div>
+                <!-- Cup Матч 4 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">1/4</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 9 янв. 2026 г., 16:00</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/willow2.jpg" alt="Willow team" class="match-logo">
+                            <div class="match-team-name">Willow team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">0</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Xenox Academy</div>
+                            <img src="img/Xenox Academy.jpg" alt="Xenox Academy" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
 
-                            <div class="score-block">
-                                <div class="score">0:2 <span class="score-winner"></span></div>
-                            </div>
+                <!-- Cup 1/2 Матч 1 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">1/2</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 10 янв. 2026 г., 13:00 мск</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="match-logo">
+                            <div class="match-team-name">Wol2nt Team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Lotos Team</div>
+                            <img src="img/lotos.jpg" alt="Lotos Team" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
 
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Wol2nt Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="team-logo">
-                                </div>
-                            </div>
+                <!-- Cup 1/2 Матч 2 -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">1/2</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 10 янв. 2026 г., 13:00 мск</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Xenox Team.jpg" alt="Xenox team" class="match-logo">
+                            <div class="match-team-name">Xenox team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Xenox Academy</div>
+                            <img src="img/Xenox Academy.jpg" alt="Xenox Academy" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
 
-                            
+                <!-- Cup Гранд-Финал -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">Гранд-Финал 🏆</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 11 янв. 2026 г., 16:00 мск</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="match-logo">
+                            <div class="match-team-name">Wol2nt Team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">2</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">0</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Xenox Team</div>
+                            <img src="img/Xenox Team.jpg" alt="Xenox Team" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
+                </div>
+
+                <!-- Cup За 3-место -->
+                <div class="match-history-card">
+                    <div class="match-status-badge">За 3-место 🥉</div>
+                    <div class="match-info-header">
+                        <div class="match-date">📅 11 янв. 2026 г., 13:00 мск</div>
+                    </div>
+                    <div class="match-teams">
+                        <div class="match-team-left">
+                            <img src="img/lotos.jpg" alt="Lotos team" class="match-logo">
+                            <div class="match-team-name">Lotos team</div>
+                        </div>
+                        <div class="match-score-box">
+                            <span class="match-score-left">1</span>
+                            <span class="match-separator">:</span>
+                            <span class="match-score-right">2</span>
+                        </div>
+                        <div class="match-team-right">
+                            <div class="match-team-name">Xenox Academy</div>
+                            <img src="img/Xenox Academy.jpg" alt="Xenox Academy" class="match-logo">
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <div class="map-info"></div>
+                    </div>
                 </div>
             </div>
-            <div class="match-history-card">
-                        <div class="match-status-badge">1/4</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 9 янв. 2025 г., 20:00</div>
-                        </div>
 
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Bezdarez Team.jpg" alt="Bezdarez Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Bezdarez Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">1:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Lotos Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/lotos.jpg" alt="Lotos Team" class="team-logo">
-                                </div>
-                            </div>
-
-                            
-                </div>
+            <div class="section-header">
+                <i>🎮</i>
+                <h1>Предстоящие матчи</h1>
             </div>
-            <div class="match-history-card">
-                        <div class="match-status-badge">1/4</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 9 янв. 2026 г., 16:00</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Xenox Team.jpg" alt="Xenox Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Xenox Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">LEGENDS5 </h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/LEGENDS5.jpg" alt="LEGENDS5" class="team-logo">
-                                </div>
-                            </div>
-
-                            
+            <section class="matches-empty">
+                <div class="matches-empty__inner">
+                    <div class="matches-empty__icon">
+                        <span>📅</span>
+                    </div>
+                    <p class="matches-empty__title">Нет предстоящих матчей</p>
+                    <p class="matches-empty__subtitle">Следите за обновлениями расписания</p>
                 </div>
-            </div>
-            <div class="match-history-card">
-                        <div class="match-status-badge">1/4</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 9 янв. 2026 г., 16:00</div>
-                        </div>
+            </section>
+        </div>
+    </section>
+</main>
 
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/willow2.jpg" alt="Willow team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Willow team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">0:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Xenox Academy</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Xenox Academy.jpg" alt="Xenox Academy" class="team-logo">
-                                </div>
-                            </div>
-
-                            
-                </div>
-            </div>
-                    <div class="match-history-card">
-                        <div class="match-status-badge">1/2</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 10 янв. 2026 г., 13:00 мск</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Wol2nt Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Lotos Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/lotos.jpg" alt="Lotos Team" class="team-logo">
-                                </div>
-                            </div>
-
-                            
-                </div>
-            </div>
-           
-           
-            <div class="match-history-card">
-                        <div class="match-status-badge">1/2</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 10 янв. 2026 г., 13:00 мск</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Xenox Team.jpg" alt="Xenox team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Xenox team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Xenox Academy</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Xenox Academy.jpg" alt="Xenox Academy" class="team-logo">
-                                </div>
-                            </div>
-
-                            
-                </div>
-            </div>
-            <div class="match-history-card">
-                        <div class="match-status-badge">Гранд-Финал🏆</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 11 янв. 2026 г., 16:00 мск</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/Wol2nt Team.jpg" alt="Wol2nt Team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Wol2nt Team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">2:0 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Xenox Team</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Xenox Team.jpg" alt="Lotos Team" class="team-logo">
-                                </div>
-                            </div>
-
-                            
-                </div>
-            </div>
-           
-           
-            <div class="match-history-card">
-                        <div class="match-status-badge">за 3-место🥉</div>
-                        <div class="match-info-header">
-                            <div class="match-date">📅 11 янв. 2026 г., 13:00 мск</div>
-                        </div>
-
-                        <div class="match-teams">
-                            <div class="team-block team-left">
-                                <div class="team-logo-container">
-                                    <img src="img/lotos.jpg" alt="Xenox team" class="team-logo">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="team-name">Lotos team</h3>
-                                </div>
-                            </div>
-
-                            <div class="score-block">
-                                <div class="score">1:2 <span class="score-winner"></span></div>
-                            </div>
-
-                            <div class="team-block team-right">
-                                <div class="team-info">
-                                    <h3 class="team-name">Xenox Academy</h3>
-                                </div>
-                                <div class="team-logo-container">
-                                    <img src="img/Xenox Academy.jpg" alt="Xenox Academy" class="team-logo">
-                                </div>
-                            </div>
-
-                            
-                </div>
-            </div>
-                    
-<div class="section-header">
-                    <i>🎮</i>
-                    <h1>Предстоящие матчи</h1>
-                </div>
-                      <section class="matches-empty">
-  <div class="matches-empty__inner">
-    <div class="matches-empty__icon">
-      <!-- можно заменить на свою SVG-иконку -->
-      <span>📅</span>
-    </div>
-    <p class="matches-empty__title">Нет предстоящих матчей</p>
-    <p class="matches-empty__subtitle">Следите за обновлениями расписания</p>
-  </div>
-</section>
-            
-        </section>
-    </main>
 
     <footer>
         <div class="container">
