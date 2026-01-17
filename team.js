@@ -20,7 +20,7 @@ const teamsData = {
     },
    
     2: {
-        name: "2Play🥈",
+        name: "2Play",
         logo: "img/2play.jpg",
         players: ["vanilinbl4", "izzo", "sanl0ne", "small_san", "m0rb1e","shodnix"],
         matches: [
@@ -32,7 +32,7 @@ const teamsData = {
         stats: { wins: 2, losses: 1, winrate: "66%", rating: 2 }
     },
     3: {
-        name: "HW Team🥉",
+        name: "HW Team",
         logo: "img/HW Team.jpg",
         players: ["-ZeNDoL", "f0l3x", " ices4d", "Garlik", "365"],
         matches: [
@@ -158,13 +158,14 @@ const team = teamsData[teamId];
 
 if (team) {
     // Генерируем трофеи с изображениями
-const trophiesHTML = team.trophies 
-    ? team.trophies.map(t => `
-        <div class="trophy-item" title="${t.title} - ${t.date}">
-            <img src="${t.image}" alt="${t.title}">
-        </div>
+const trophiesHTML = team.trophies && team.trophies.length
+  ? team.trophies.map(t => `
+      <div class="trophy-item" title="${t.title} - ${t.date}">
+        <img src="${t.image}" alt="${t.title}">
+      </div>
     `).join('')
-    : '';
+  : '';
+
 
 document.getElementById('teamName').innerHTML = `
     ${team.name}

@@ -4063,3 +4063,118 @@ header {
         font-size: 1.15rem;
     }
 }
+@media (max-width: 768px) {
+  .match-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .match-team-left,
+  .match-team-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match-score-box {
+    margin: 0.3rem 0;
+  }
+
+  .match-date,
+  .match-stage {
+    font-size: 0.85rem;
+  }
+}
+
+/* КАРТОЧКИ МАТЧЕЙ НА СТРАНИЦЕ КОМАНДЫ */
+.team-matches-list {
+  max-height: 500px;          /* высота блока с матчами */
+  overflow-y: auto;           /* вертикальный скролл, если матчей много */
+  padding-right: 8px;         /* небольшой отступ под скролл */
+}
+
+.match-card {
+  padding: 1.2rem 1.5rem;     /* меньше отступы внутри */
+  margin: 0.6rem 0;           /* меньше расстояние между матчами */
+  border-radius: 16px;        /* как на скрине, но можно чуть меньше */
+}
+
+.match-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.match-score-left,
+.match-score-right {
+  font-size: 2rem;
+}
+
+.match-date,
+.match-stage {
+  font-size: 0.9rem;
+}
+
+.team-matches-section {
+  max-width: 900px;      /* ширина зоны матчей */
+  margin: 0 auto;        /* центр по экрану */
+}
+
+.team-matches-list {
+  border-left: 1px solid rgba(148, 163, 184, 0.3);
+  border-right: 1px solid rgba(148, 163, 184, 0.3);
+}
+/* Сетка трёх блоков под ПК */
+.team-details-content {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr 1.1fr;
+    gap: 2rem;
+}
+
+/* Область матчей с границами и скроллом */
+.team-matches-wrapper {
+    max-height: 520px; /* высота области матчей */
+    overflow-y: auto;  /* скролл, если игр много */
+    border-left: 1px solid rgba(148, 163, 184, 0.35);
+    border-right: 1px solid rgba(148, 163, 184, 0.35);
+    padding: 0.6rem 0;
+}
+
+/* Чуть компактнее сами карточки */
+.matches-list .match-card {
+    padding: 1rem 1.4rem;
+    margin: 0.5rem 0;
+}
+
+/* Адаптив под телефон */
+@media (max-width: 768px) {
+    .team-details-content {
+        grid-template-columns: 1fr;
+    }
+
+    .team-matches-wrapper {
+        max-height: 420px;
+    }
+}
+
+/* ЛОГОТИПЫ В КАРТОЧКАХ МАТЧЕЙ */
+.match-logo {
+    width: 70px;           /* уменьшаем с 80–100px */
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Ещё компактнее вся карточка */
+.match-card {
+    padding: 1rem 1.2rem;
+    gap: 0.8rem;
+}
+
+/* На телефоне ещё меньше */
+@media (max-width: 768px) {
+    .match-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
