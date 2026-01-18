@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Команда | MLT CS2 TOURNAMENT</title>
+    <title>История матчей | MLT CS2 TOURNAMENT</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo.jpg">
 </head>
 <body>
-    <div class="snow-layer"></div>
-    
     <header>
     <nav>
         <a href="index.html" class="logo-container">
@@ -28,58 +29,52 @@
         
         <!-- Меню ссылок -->
         <div class="nav-links">
-            <a href="teams.html"class="active">Команды</a>
+            <a href="teams.html">Команды</a>
             <a href="tournaments.html">Турниры</a>
             <a href="matches.html">Матчи</a>
             <a href="mlt-rating.html">MLT рейтинг</a>
-             <a href="players.html" >MLT Игроки</a>
+             <a href="players.html" class="active">MLT Игроки</a>
             <a href="rules.html">Правила</a>
         </div>
     </nav>
 </header>
 
-    <section class="team-details-section">
-    <div class="container">
+            <!-- Фильтры -->
+            <div class="players-filters">
+                <select id="teamFilter" class="filter-select">
+                    <option value="all">Все команды</option>
+                </select>
+                <select id="sortFilter" class="filter-select">
+                    <option value="rating">По рейтингу</option>
+                    <option value="name">По имени</option>
+                    <option value="team">По команде</option>
+                </select>
+            </div>
 
-        <div class="team-details-header">
-            <img id="teamLogo" class="team-details-logo" src="" alt="logo">
-            <div class="team-details-info">
-                <h1 id="teamName"></h1>
-                <div id="teamStats" class="team-details-stats"></div>
+            <!-- Таблица игроков -->
+            <div class="players-table-wrapper">
+                <table class="players-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Игрок</th>
+                            <th>Команда</th>
+                            <th>Матчи</th>
+                            <th>K-D Diff</th>
+                            <th>K/D</th>
+                            <th>Рейтинг</th>
+                        </tr>
+                    </thead>
+                    <tbody id="playersTableBody">
+                        <!-- Генерируется JS -->
+                    </tbody>
+                </table>
             </div>
         </div>
+    </main>
 
-        <div class="team-details-content">
-            <!-- Состав -->
-            <div class="team-roster">
-                <h2>Состав</h2>
-                <div id="teamRoster" class="roster-list"></div>
-            </div>
-
-            <!-- Матчи -->
-            <div class="team-matches">
-                <h2>Матчи</h2>
-                <div class="team-matches-wrapper">
-                    <div id="teamMatches" class="matches-list"></div>
-                </div>
-            </div>
-
-            <!-- Статистика -->
-            <div class="team-stats-detailed">
-                <h2>Статистика</h2>
-                <div id="teamStatsDetailed" class="stats-grid"></div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-    
-
-    <script src="team.js"></script>
-     <div class="snow-layer"></div>
-      <script>
+    <script src="players.js"></script>
+    <script>
     const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
 

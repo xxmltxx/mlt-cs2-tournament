@@ -4178,3 +4178,158 @@ header {
         height: 60px;
     }
 }
+
+
+/* === СТРАНИЦА ИГРОКОВ === */
+.players-page {
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+.players-filters {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.filter-select {
+    padding: 0.7rem 1.2rem;
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    border-radius: 12px;
+    color: #e2e8f0;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-select:hover {
+    border-color: #3b82f6;
+    background: rgba(30, 41, 59, 0.9);
+}
+
+/* Таблица игроков */
+.players-table-wrapper {
+    overflow-x: auto;
+    border-radius: 16px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.players-table thead {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(37, 99, 235, 0.3));
+    border-bottom: 2px solid rgba(59, 130, 246, 0.6);
+}
+
+.players-table th {
+    padding: 1.2rem 1rem;
+    text-align: left;
+    font-family: 'Orbitron', sans-serif;
+    color: #60a5fa;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.player-row {
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.player-row:hover {
+    background: rgba(59, 130, 246, 0.15);
+    transform: translateX(4px);
+}
+
+.players-table td {
+    padding: 1rem;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+}
+
+/* Ячейки */
+.rank-cell {
+    font-weight: bold;
+    color: #94a3b8;
+    width: 60px;
+    text-align: center;
+}
+
+.player-cell {
+    min-width: 200px;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.player-team-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.player-name {
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.team-cell {
+    color: #94a3b8;
+}
+
+.matches-cell {
+    text-align: center;
+    color: #cbd5e1;
+}
+
+.kd-diff-cell {
+    text-align: center;
+    font-weight: 600;
+}
+
+.kd-diff-cell.positive {
+    color: #66ff66;
+}
+
+.kd-diff-cell.negative {
+    color: #ff6666;
+}
+
+.kd-cell {
+    text-align: center;
+    font-weight: 600;
+}
+
+.rating-cell {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .players-filters {
+        flex-direction: column;
+    }
+    
+    .players-table th,
+    .players-table td {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .player-team-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
