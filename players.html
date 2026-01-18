@@ -38,7 +38,13 @@
         </div>
     </nav>
 </header>
-
+<main>
+        <section class="rating-page-section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-trophy"></i>
+                    <h2> MLT Игроки</h2>
+                </div>
             <!-- Фильтры -->
             <div class="players-filters">
                 <select id="teamFilter" class="filter-select">
@@ -72,8 +78,22 @@
             </div>
         </div>
     </main>
+<footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.twitch.tv/mlt_cs2" title="Twitch" target="_blank">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://t.me/MLT_CS2" title="Telegram" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 MLT CS2 Tournament</p>
+        </div>
+    </footer>
 
-    <script src="players.js"></script>
+    <div class="snow-layer"></div>
+    
     <script>
     const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
@@ -108,5 +128,10 @@ window.addEventListener('resize', () => {
 });
 
 </script>
+
+<script src="players-stats.js"></script>
+<script src="players.js"></script>
+
+
 </body>
 </html>

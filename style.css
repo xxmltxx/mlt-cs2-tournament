@@ -4333,3 +4333,342 @@ header {
         height: 24px;
     }
 }
+
+
+ /* === СТРАНИЦА ПРОФИЛЯ ИГРОКА === */
+.player-profile-page {
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+.player-profile-card {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 3rem;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.6));
+    border-radius: 24px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Левая часть */
+.player-profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.player-photo-container {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+}
+
+.player-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-basic-info {
+    text-align: center;
+    width: 100%;
+}
+
+.player-nickname {
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+
+.player-real-name {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.player-team-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: rgba(30, 41, 59, 0.6);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.profile-team-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.player-team-badge span {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(59, 130, 246, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    border-radius: 12px;
+    color: #60a5fa;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background: rgba(59, 130, 246, 0.3);
+    transform: translateX(-5px);
+}
+
+/* Правая часть - статистика */
+.player-profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Rating круг */
+.rating-main-circle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.rating-circle-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.rating-circle-svg {
+    transform: rotate(-90deg);
+}
+
+.rating-circle-bg {
+    fill: none;
+    stroke: rgba(148, 163, 184, 0.2);
+    stroke-width: 12;
+}
+
+.rating-circle-progress {
+    fill: none;
+    stroke: #66ff66;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease, stroke 0.5s ease;
+}
+
+.rating-circle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rating-quality {
+    display: block;
+    font-size: 0.9rem;
+    color: #66ff66;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.rating-value-big {
+    display: block;
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+.rating-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 0.3rem;
+}
+
+/* T/CT рейтинги */
+.rating-secondary {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.rating-side {
+    text-align: center;
+}
+
+.rating-side-value {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.rating-side-value.ct {
+    color: #3b82f6;
+}
+
+.rating-side-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 0.3rem;
+}
+
+/* Сетка статистики */
+.stats-grid-profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.stat-item-profile {
+    background: rgba(30, 41, 59, 0.4);
+    padding: 1.2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.stat-value-profile {
+    display: block;
+    font-size: 1.8rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #e2e8f0;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label-profile {
+    display: block;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 0.8rem;
+}
+
+.stat-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(148, 163, 184, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    background: #94a3b8;
+    transition: width 0.5s ease;
+}
+
+.stat-bar-fill.good {
+    background: #66ff66;
+}
+
+.stat-bar-fill.okay {
+    background: #f59e0b;
+}
+
+.stat-bar-fill.bad {
+    background: #ff6666;
+}
+
+.stat-quality {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.stat-quality.good {
+    color: #66ff66;
+}
+
+.stat-quality.okay {
+    color: #f59e0b;
+}
+
+/* Дополнительная статистика */
+.player-additional-stats {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.6));
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.player-additional-stats h3 {
+    color: #60a5fa;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.additional-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.additional-stat-card {
+    background: rgba(30, 41, 59, 0.4);
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.additional-stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 0.8rem;
+}
+
+.additional-stat-value {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .player-profile-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid-profile {
+        grid-template-columns: 1fr;
+    }
+    
+    .additional-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .player-nickname {
+        font-size: 2rem;
+    }
+    
+    .additional-stats-grid {
+        grid-template-columns: 1
+}
+}

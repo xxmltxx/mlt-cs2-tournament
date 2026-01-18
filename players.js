@@ -13,7 +13,7 @@ const teamsData = {
     3: {
         name: "HW Team",
         logo: "img/HW Team.jpg",
-        players: ["-ZeNDoL", "f0l3x", "ices4d", "Garlik", "365"]
+        players: ["ZeNDoL", "f0l3x", "ices4d", "Garlik", "365"]
     },
     4: {
         name: "4otka",
@@ -72,28 +72,36 @@ const teamsData = {
     }
 };
 
-// Генерируем данные игроков - ВСЕ СТАТЫ НА НОЛЬ
+/// Генерируем данные игроков С РЕАЛЬНЫМИ СТАТАМИ из players-stats.js
 const playersData = [];
 let playerIdCounter = 1;
 
 Object.keys(teamsData).forEach(teamId => {
     const team = teamsData[teamId];
     team.players.forEach(playerName => {
+        const trimmedName = playerName.trim();
+        // Берём статы из players-stats.js или ставим нули
+        const stats = playerStatsData[trimmedName] || { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" };
+        
         playersData.push({
             id: playerIdCounter++,
-            name: playerName.trim(),
+            name: trimmedName,
             team: team.name,
             teamLogo: team.logo,
             teamId: teamId,
-            matches: 0,
-            kdDiff: 0,
-            kd: "0.00",
-            rating: "0.00"
+            matches: stats.matches,
+            kdDiff: stats.kdDiff,
+            kd: stats.kd,
+            rating: stats.rating
         });
     });
 });
 
-// Рендер таблицы
+// Переменная для текущего фильтра команды
+let currentTeamFilter = 'all';
+let currentSortBy = 'name';
+
+// Рендер таблицы с правильными цветами для K-D Diff
 function renderPlayersTable(players) {
     const tbody = document.getElementById('playersTableBody');
     tbody.innerHTML = players.map((player, index) => `
@@ -107,18 +115,28 @@ function renderPlayersTable(players) {
             </td>
             <td class="team-cell">${player.team}</td>
             <td class="matches-cell">${player.matches}</td>
-            <td class="kd-diff-cell">${player.kdDiff}</td>
+            <td class="kd-diff-cell ${player.kdDiff > 0 ? 'positive' : (player.kdDiff < 0 ? 'negative' : '')}">
+                ${player.kdDiff > 0 ? '+' : ''}${player.kdDiff}
+            </td>
             <td class="kd-cell">${player.kd}</td>
             <td class="rating-cell">
-                <span class="rating-value" style="color: #94a3b8">${player.rating}</span>
+                <span class="rating-value" style="color: ${getRatingColor(player.rating)}">${player.rating}</span>
             </td>
         </tr>
     `).join('');
 }
 
-// Переменная для текущего фильтра команды
-let currentTeamFilter = 'all';
-let currentSortBy = 'name';
+// Цвет рейтинга как на HLTV
+function getRatingColor(rating) {
+    const r = parseFloat(rating);
+    if (r >= 1.25) return '#66ff66';
+    if (r >= 1.15) return '#99ff99';
+    if (r >= 1.05) return '#ccffcc';
+    if (r >= 0.95) return '#ffff99';
+    if (r >= 0.85) return '#ffcc99';
+    if (r > 0) return '#ff9999';
+    return '#94a3b8'; // серый для нулевых
+}
 
 // Применить фильтры и сортировку
 function applyFiltersAndSort() {
