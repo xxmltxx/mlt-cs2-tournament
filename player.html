@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль игрока | MLT CS2 TOURNAMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+</head>
+<body>
+    <div class="snow-layer"></div>
+    
+    <!-- HEADER -->
+    
+
+    <!-- MAIN CONTENT -->
+    <main class="player-profile-page">
+        <div class="container">
+            <!-- Основная карточка профиля -->
+            <div class="player-profile-card">
+                
+                <!-- ЛЕВАЯ ЧАСТЬ - Информация о игроке -->
+                <div class="player-profile-left">
+                    <div class="player-photo-container">
+                        <img id="playerPhoto" src="img/" alt="Player Photo" class="player-photo">
+                    </div>
+                    
+                    <div class="player-basic-info">
+                        <h1 id="playerNickname" class="player-nickname">Nickname</h1>
+                        <p id="playerRealName" class="player-real-name">Real Name • Age years</p>
+                        
+                        <div class="player-team-badge">
+                            <img id="playerTeamLogo" src="" alt="Team Logo" class="profile-team-logo">
+                            <span id="playerTeamName">Team Name</span>
+                        </div>
+                        
+                        <a href="players.html" class="back-button">
+                            ← Назад к списку
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ПРАВАЯ ЧАСТЬ - Статистика -->
+                <div class="player-profile-right">
+                    
+                    <!-- Rating 2.0 Круг -->
+                    <div class="rating-main-circle">
+                        <div class="rating-circle-wrapper">
+                            <svg class="rating-circle-svg" width="200" height="200">
+                                ircle cx="100" cy="100" r="85" class="rating-circle-bg"></circle>
+                                ircle id="ratingCircle" cx="100" cy="100" r="85" class="rating-circle-progress"></circle>
+                            </svg>
+                            <div class="rating-circle-content">
+                                <span class="rating-quality" id="ratingQuality">N/A</span>
+                                <span class="rating-value-big" id="ratingValue">0.00</span>
+                                <span class="rating-label">RATING 2.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T/CT Rating -->
+                    <div class="rating-secondary">
+                        <div class="rating-side">
+                            <span class="rating-side-value" id="tRating">0.00</span>
+                            <span class="rating-side-label">T RATING</span>
+                        </div>
+                        <div class="rating-side">
+                            <span class="rating-side-value ct" id="ctRating">0.00</span>
+                            <span class="rating-side-label">CT RATING</span>
+                        </div>
+                    </div>
+
+                    <!-- Сетка статистики -->
+                    <div class="stats-grid-profile">
+                        
+                        <!-- Round Swing -->
+                        <div class="stat-item-profile">
+                            <span class="stat-value-profile" id="roundSwing">-</span>
+                            <span class="stat-label-profile">ROUND SWING</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" id="roundSwingBar"></div>
+                            </div>
+                            <span class="stat-quality" id="roundSwingQuality">N/A</span>
+                        </div>
+
+                        <!-- DPR -->
+                        <div class="stat-item-profile">
+                            <span class="stat-value-profile" id="dpr">0.00</span>
+                            <span class="stat-label-profile">DPR</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" id="dprBar"></div>
+                            </div>
+                            <span class="stat-quality" id="dprQuality">N/A</span>
+                        </div>
+
+                        <!-- KAST -->
+                        <div class="stat-item-profile">
+                            <span class="stat-value-profile" id="kast">0.0 %</span>
+                            <span class="stat-label-profile">KAST</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" id="kastBar"></div>
+                            </div>
+                            <span class="stat-quality" id="kastQuality">N/A</span>
+                        </div>
+
+                        <!-- Multi-Kill -->
+                        <div class="stat-item-profile">
+                            <span class="stat-value-profile" id="multiKill">-</span>
+                            <span class="stat-label-profile">MULTI-KILL</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" id="multiKillBar"></div>
+                            </div>
+                            <span class="stat-quality" id="multiKillQuality">N/A</span>
+                        </div>
+
+                        <!-- ADR -->
+                        <div class="stat-item-profile">
+                            <span class="stat-value-profile" id="adr">0.0</span>
+                            <span class="stat-label-profile">ADR</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" id="adrBar"></div>
+                            </div>
+                            <span class="stat-quality" id="adrQuality">N/A</span>
+                        </div>
+
+                        <!-- KPR -->
+                        <div class="stat-item-profile">
+                            <span class="stat-value-profile" id="kpr">0.00</span>
+                            <span class="stat-label-profile">KPR</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" id="kprBar"></div>
+                            </div>
+                            <span class="stat-quality" id="kprQuality">N/A</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Дополнительная статистика -->
+            <div class="player-additional-stats">
+                <h3>Основная статистика</h3>
+                <div class="additional-stats-grid">
+                    <div class="additional-stat-card">
+                        <span class="additional-stat-label">Матчи</span>
+                        <span class="additional-stat-value" id="totalMatches"></span>
+                    </div>
+                    <div class="additional-stat-card">
+                        <span class="additional-stat-label">K-D Diff</span>
+                        <span class="additional-stat-value" id="kdDiff"></span>
+                    </div>
+                    <div class="additional-stat-card">
+                        <span class="additional-stat-label">K/D Ratio</span>
+                        <span class="additional-stat-value" id="kdRatio"></span>
+                    </div>
+                    <div class="additional-stat-card">
+                        <span class="additional-stat-label">Рейтинг 2.0</span>
+                        <span class="additional-stat-value" id="rating20"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER (если есть) -->
+    
+    <!-- SCRIPTS -->
+    <script src="player-profile.js"></script>
+    <div class="snow-layer"></div>
+    
+    <script>
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

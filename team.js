@@ -34,10 +34,10 @@ const teamsData = {
     3: {
         name: "HW Team",
         logo: "img/HW Team.jpg",
-        players: ["-ZeNDoL", "f0l3x", " ices4d", "Garlik", "365"],
+        players: ["-ZeNDoL", "f0l3x", " ices4d", "Garl1k", "365"],
         matches: [
             { opponent: "TEMPLI TEAM", opponentLogo: "img/TEMPLI TEAM.jpg", myScore: 2, oppScore: 0, date: "16.12.2025", stage: "1/4" },
-            { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 2, oppScore: 0, date: "22.12.2025", stage: "1/2" },
+            { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 0, oppScore: 2, date: "22.12.2025", stage: "1/2" },
             { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 2, oppScore: 0, date: "25.12.2025", stage: "3а 3 место" }
         ],
         stats: { wins: 2, losses: 1, winrate: "66%", rating: 3 }

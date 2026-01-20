@@ -19,7 +19,7 @@ const playerStatsData = {
     "-ZeNDoL": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
     "f0l3x": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
     "ices4d": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
-    "Garlik": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+    "Garl1k": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
     "365": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
 
     // 4otka

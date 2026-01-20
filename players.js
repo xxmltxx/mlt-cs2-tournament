@@ -125,6 +125,27 @@ function renderPlayersTable(players) {
         </tr>
     `).join('');
 }
+// ПРИМЕР: Где-то в твоем players.js
+function createPlayerRow(player, index) {
+    const row = document.createElement('tr');
+    
+    row.innerHTML = `
+        <td>${index + 1}</td>
+        <td class="player-cell">
+            <a href="player.html?id=${player.id}" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <img src="${player.photo}" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                <span>${player.nickname}</span>
+            </a>
+        </td>
+        <td>${player.teamName}</td>
+        <td>${player.stats.matches}</td>
+        <td>${player.stats.kdDiff}</td>
+        <td>${player.stats.kd.toFixed(2)}</td>
+        <td>${player.stats.rating.toFixed(2)}</td>
+    `;
+    
+    return row;
+}
 
 // Цвет рейтинга как на HLTV
 function getRatingColor(rating) {
