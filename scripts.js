@@ -230,11 +230,11 @@ const teamsData = {
     points: 0,
     rank: 9,
     players: [
-      { name: "puywx -Support", photo: "img/player-photo.jpg" },
-      { name: "low11ness -IGL ", photo: "img/player-photo.jpg" },
-      { name: "1sma_333 -Support", photo: "img/player-photo.jpg" },
-      { name: "T1FV -Openfrager", photo: "img/player-photo.jpg" },
-      { name: "greggy -AWP", photo: "img/player-photo.jpg" },
+      { name: "puywx ", photo: "img/player-photo.jpg" },
+      { name: "low11ness  ", photo: "img/player-photo.jpg" },
+      { name: "1sma_333 ", photo: "img/player-photo.jpg" },
+      { name: "T1FV ", photo: "img/player-photo.jpg" },
+      { name: "greggy ", photo: "img/player-photo.jpg" },
       
     ]
   },
