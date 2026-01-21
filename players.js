@@ -69,7 +69,12 @@ const teamsData = {
         name: "Xenox Academy",
         logo: "img/Xenox Academy.jpg",
         players: ["Dazzlix", "Sojerio", "Scyrox","Kovocc", "V3nera"]
-    }
+    },
+    15: {
+        name: "STAR GAMING ACADEMY",
+        logo: "img/STAR GAMING ACADEMY.jpg",
+        players: ["puywx", "low11ness", "1sma_333","T1FV", "greggy"]
+    },
 };
 
 /// Генерируем данные игроков С РЕАЛЬНЫМИ СТАТАМИ из players-stats.js
@@ -99,7 +104,7 @@ Object.keys(teamsData).forEach(teamId => {
 
 // Переменная для текущего фильтра команды
 let currentTeamFilter = 'all';
-let currentSortBy = 'name';
+let currentSortBy = '';
 
 // Рендер таблицы с правильными цветами для K-D Diff
 function renderPlayersTable(players) {

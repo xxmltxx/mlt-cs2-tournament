@@ -4672,3 +4672,315 @@ header {
         grid-template-columns: 1
 }
 }
+
+/* Страница профиля игрока */
+.player-profile-page {
+  padding: 40px 0 60px;
+}
+
+.player-profile-card {
+  display: flex;
+  gap: 32px;
+  background: rgba(10, 18, 40, 0.9);
+  border-radius: 16px;
+  padding: 24px 28px;
+  border: 1px solid rgba(120, 180, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Левая часть */
+.player-profile-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.player-photo-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #3b82f6;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+}
+
+.player-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-basic-info {
+  text-align: center;
+}
+
+.player-nickname {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.player-real-name {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.player-team-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 999px;
+  padding: 6px 14px;
+  border: 1px solid rgba(96, 165, 250, 0.5);
+}
+
+.profile-team-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.player-team-badge span {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #93c5fd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #bfdbfe;
+}
+
+/* Правая часть */
+.player-profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Круглый рейтинг */
+.rating-main-circle {
+  display: flex;
+  justify-content: center;
+}
+
+.rating-circle-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.rating-circle-svg {
+  transform: rotate(-90deg);
+}
+
+.rating-circle-bg {
+  fill: transparent;
+  stroke: #111827;
+  stroke-width: 14;
+}
+
+.rating-circle-progress {
+  fill: transparent;
+  stroke: #22c55e;
+  stroke-width: 14;
+  stroke-linecap: round;
+  stroke-dasharray: 534; /* 2 * PI * 85 */
+  stroke-dashoffset: 534;
+  transition: stroke-dashoffset 0.4s ease, stroke 0.3s ease;
+}
+
+.rating-circle-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.rating-quality {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.rating-value-big {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rating-label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* T / CT рейтинг */
+.rating-secondary {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.rating-side {
+  text-align: center;
+}
+
+.rating-side-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.rating-side-value.ct {
+  color: #60a5fa;
+}
+
+.rating-side-label {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* Сетка атрибутов */
+.stats-grid-profile {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stat-item-profile {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(75, 85, 99, 0.7);
+}
+
+.stat-value-profile {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.stat-label-profile {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.stat-bar {
+  margin-top: 8px;
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: #111827;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 0.4s ease;
+}
+
+.stat-quality {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Дополнительная статистика */
+.player-additional-stats {
+  margin-top: 32px;
+}
+
+.player-additional-stats h3 {
+  font-size: 16px;
+  color: #e5e7eb;
+  margin-bottom: 12px;
+}
+
+.additional-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.additional-stat-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(55, 65, 81, 0.8);
+}
+
+.additional-stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 0.12em;
+}
+
+.additional-stat-value {
+  display: block;
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .player-profile-card {
+    flex-direction: column;
+  }
+
+  .player-profile-left {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .player-basic-info {
+    text-align: left;
+    margin-left: 16px;
+  }
+
+  .stats-grid-profile {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .additional-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid-profile,
+  .additional-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

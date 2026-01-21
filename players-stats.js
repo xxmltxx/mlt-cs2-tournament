@@ -100,5 +100,13 @@ const playerStatsData = {
     "Sojerio": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
     "Scyrox": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
     "Kovocc": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
-    "V3nera": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" }
+    "V3nera": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+    
+     // STAR GAMING ACADEMY
+    "puywx": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+    "low11ness": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+    "1sma_333": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+    "T1FV": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+    "greggy": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" }
 };
+

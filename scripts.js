@@ -221,6 +221,23 @@ const teamsData = {
       
     ]
   },
+
+  15: {
+    name: "STAR GAMING ACADEMY",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "puywx -Support", photo: "img/player-photo.jpg" },
+      { name: "low11ness -IGL ", photo: "img/player-photo.jpg" },
+      { name: "1sma_333 -Support", photo: "img/player-photo.jpg" },
+      { name: "T1FV -Openfrager", photo: "img/player-photo.jpg" },
+      { name: "greggy -AWP", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
 };
 
 function showRoster(teamId) {

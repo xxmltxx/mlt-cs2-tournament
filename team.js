@@ -149,6 +149,14 @@ const teamsData = {
         ],
         stats: { wins: 2, losses: 1, winrate: "66%", rating: 6 }
     },
+
+    15: {
+        name: "STAR GAMING ACADEMY",
+        logo: "img/STAR GAMING ACADEMY.jpg",
+        players: ["puywx ", "low11ness ", "1sma_333","T1FV ", "greggy", ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 15 }
+    },
     
 };
 
