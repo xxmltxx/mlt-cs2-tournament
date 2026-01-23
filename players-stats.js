@@ -109,7 +109,8 @@ const playerStatsData = {
   "low11ness": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
   "1sma_333": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
   "T1FV": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
-  "greggy": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" }
+  "greggy": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
+  "T1m2r ": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" }, 
 };
 
 // Массив игроков с id — для таблицы и профилей

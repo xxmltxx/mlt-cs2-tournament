@@ -75,7 +75,7 @@ const teamsData = {
     15: {
         name: "STAR GAMING ACADEMY",
         logo: "img/STAR GAMING ACADEMY.jpg",
-        players: ["puywx", "low11ness", "1sma_333", "T1FV", "greggy"]
+        players: ["puywx", "low11ness", "1sma_333", "T1FV", "greggy","T1m2r"]
     }
 };
 
