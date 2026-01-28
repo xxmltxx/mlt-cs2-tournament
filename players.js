@@ -5,7 +5,7 @@ const teamsData = {
     1: {
         name: "Wol2nt Team",
         logo: "img/Wol2nt Team.jpg",
-        players: ["kas11k", "deserted", "Chapickka", "FishyO", "Alma3ik"]
+        players: ["shodnix", "Da1ke", "small_san", "deus", "Alma3ik","suizie"]
     },
     2: {
         name: "2Play",
@@ -15,7 +15,7 @@ const teamsData = {
     3: {
         name: "HW Team",
         logo: "img/HW Team.jpg",
-        players: ["-ZeNDoL", "f0l3x", "ices4d", "Garl1k", "365"]
+        players: ["ZeNDoL", "f0l3x", "ices4d", "Garl1k", "365","kewbie"]
     },
     4: {
         name: "4otka",
@@ -40,7 +40,7 @@ const teamsData = {
     8: {
         name: "Platina Esports Academy",
         logo: "img/Platina Esports Academy.jpg",
-        players: ["itsuke", "sintax", "anderwolt", "Imprezall", "co1n"]
+        players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7"]
     },
     9: {
         name: "LOTOS Team",
@@ -49,7 +49,7 @@ const teamsData = {
     },
     10: {
         name: "Willow team",
-        logo: "img/willow2.jpg",
+        logo: "img/newlogowillow.jpg",
         players: ["sk1nw0rk", "Varadka", "xsenzo", "selz1sh", "DayHe"]
     },
     11: {
@@ -76,7 +76,62 @@ const teamsData = {
         name: "STAR GAMING ACADEMY",
         logo: "img/STAR GAMING ACADEMY.jpg",
         players: ["puywx", "low11ness", "1sma_333", "T1FV", "greggy","T1m2r"]
-    }
+    },
+      16: {
+        name: "HOLOXY",
+        logo: "img/HOLOXY.jpg",
+        players: [" lmz", " akemanuory", "dieelo-","ymf1le-", "l1e","67km",  ]
+    },
+      17: {
+        name: "AurriX",
+        logo: "img/AurriX.jpg",
+        players: [" TuRm1st ", " art1k", "XosakoX","Whytemples", "PozitiV","neagent"]
+    },
+      18: {
+        name: "KOS Team",
+        logo: "img/KOS Team.jpg",
+        players: [" k1PS0", " ponder", "Buburuza","klouz", "vilchinskii","D3lux","mitsv","Sonk1"]
+    },
+      19: {
+        name: "ECHELON ACADEMY",
+        logo: "img/ECHELON ACADEMY.jpg",
+        players: [" qvasher ", "hzZh  ", "stogi09. ","Vert1si ", "Into1imore ","x1tar0 ","khvoia","mintty"]
+    },
+      20: {
+        name: "ECHELON TEAM",
+        logo: "img/ECHELON TEAM.jpg",
+        players: [" norowaretIY ", "faloya  ", "wewqeqe ","unluck ", "Prizmarun ","helllink"]
+    },
+      21: {
+        name: "DL-Team",
+        logo: "img/DL-Team.jpg",
+        players: [" T1mPro", "Genessis  ", "LIL_nastusha","20.31", "Nami","qwalaz"]
+    },
+      22: {
+        name: "Ven team",
+        logo: "img/Ven team.jpg",
+        players: [" T1mPro", "Genessis  ", "LIL_nastusha","20.31", "Nami","qwalaz" ]
+    },
+      23: {
+        name: "Fonbet team",
+        logo: "img/Fonbet team.jpg",
+        players: ["Kasuke999 ", " anon1m666", "kyotaa","virpl", "s1lw3r","z1po0",]
+    },
+      24: {
+        name: "GODBLESS TEAM",
+        logo: "img/GODBLESS TEAM.jpg",
+        players: [" quakaaaa", "  ImprezaLL", "znx","mist", "maLLii",]
+    },
+      25: {
+        name: "TT.Future",
+        logo: "img/TT.Future.jpg",
+        players: []
+    },
+      26: {
+        name: "Rekinder eSports",
+        logo: "img/Rekinder eSports.jpg",
+        players: [" sal1ch", "deadl0cked ", "L1lpep-fan","shnyroQ", "takuya","Winach","2girlpicks"]
+    },
 };
 
 /// Генерируем данные игроков с реальными статами из players-stats.js

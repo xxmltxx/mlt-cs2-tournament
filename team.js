@@ -7,7 +7,7 @@ const teamsData = {
     { title: "MLT CUP", date: "Январь 2026", image: "img/inmgcup.jpg" }
 ]
 ,
-        players: ["kas11k", "deserted", "Chapickka", "FishyO", "Alma3ik"],
+        players: ["A1ma3ik", "shodnix", "Da1ke", "small_san", "-deus","suizie"],
         matches: [
             { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 2, oppScore: 1, date: "17.12.2025", stage: "1/4" },
             { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 2, oppScore: 0, date: "22.12.2025", stage: "1/2" },
@@ -34,7 +34,7 @@ const teamsData = {
     3: {
         name: "HW Team",
         logo: "img/HW Team.jpg",
-        players: ["-ZeNDoL", "f0l3x", " ices4d", "Garl1k", "365"],
+        players: ["ZeNDoL", "F0l3x ", " ices4d", "Garl1k", "365","kewbie"],
         matches: [
             { opponent: "TEMPLI TEAM", opponentLogo: "img/TEMPLI TEAM.jpg", myScore: 2, oppScore: 0, date: "16.12.2025", stage: "1/4" },
             { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 0, oppScore: 2, date: "22.12.2025", stage: "1/2" },
@@ -82,7 +82,7 @@ const teamsData = {
     8: {
         name: "Platina Esports Academy",
         logo: "img/Platina Esports Academy.jpg",
-        players: ["itsuke", "sintax", "anderwolt", "Imprezall", "co1n"],
+        players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7"],
         matches: [
             { opponent: "2Play", opponentLogo: "img/2play.jpg", myScore: 0, oppScore: 2, date: "18.12.2025", stage: "1/4" }
         ],
@@ -91,7 +91,7 @@ const teamsData = {
     9: {
         name: "LOTOS Team",
         logo: "img/lotos.jpg",
-        players: ["Zayn0x", "Klay_dik", "FanTazy","Worm", "Shmaa", "Yazami"],
+        players: ["Zayn0x", "Klay_dik", "FanTazy","Scail", "Chyva4ok ", "Zerwick","Wizzy"],
         matches: [
             { opponent: "4otka", opponentLogo: "img/4otka.jpg", myScore: 1, oppScore: 2, date: "19.12.2025", stage: "1/4" },
             { opponent: "Bezdarez Team", opponentLogo: "img/Bezdarez Team.jpg", myScore: 2, oppScore: 1, date: "09.01.2026", stage: "1/4" },
@@ -102,7 +102,7 @@ const teamsData = {
     },
     10: {
         name: "Willow team",
-        logo: "img/willow2.jpg",
+        logo: "img/newlogowillow.jpg",
         players: ["sk1nw0rk", "Varadka  ", "xsenzo","selz1sh","DayHe",  ],
         matches: [
             { opponent: "Xenox Academy", opponentLogo: "img/Xenox Academy.jpg", myScore: 0, oppScore: 2, date: "09.01.2025", stage: "1/4" }
@@ -143,7 +143,7 @@ const teamsData = {
         logo: "img/Xenox Academy.jpg",
         players: ["Dazzlix", "Sojerio", "Scyrox","Kovocc", "V3nera"],
         matches: [
-            { opponent: "Willow Team", opponentLogo: "img/willow2.jpg", myScore: 2, oppScore: 0, date: "09.01.2026", stage: "1/4" },
+            { opponent: "Willow Team", opponentLogo: "img/newlogowillow.jpg", myScore: 2, oppScore: 0, date: "09.01.2026", stage: "1/4" },
             { opponent: "Xenox Team", opponentLogo: "img/Xenox Team.jpg", myScore: 0, oppScore: 2, date: "10.01.2026", stage: "1/2" },
              { opponent: "Lotos Team", opponentLogo: "img/lotos.jpg", myScore: 2, oppScore: 1, date: "11.01.2026", stage: " 3-место" }
         ],
@@ -158,6 +158,93 @@ const teamsData = {
         stats: { wins: 0, losses: 0, winrate: "0%", rating: 15 }
     },
     
+    16: {
+        name: "HOLOXY",
+        logo: "img/HOLOXY.jpg",
+        players: [" lmz", " akemanuory", "dieelo-","ymf1le-", "l1e","67km", "Coach: Matriks" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 16  }
+    },
+
+    17: {
+        name: "AurriX",
+        logo: "img/AurriX.jpg",
+        players: [" TuRm1st ", " art1k", "XosakoX","Whytemples", "PozitiV","neagent" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 17 }
+    },
+
+    18: {
+        name: "KOS Team",
+        logo: "img/KOS Team.jpg",
+        players: [" k1PS0", " ponder", "Buburuza","klouz", "vilchinskii","D3lux","mitsv","Sonk1" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 18 }
+    },
+
+    19: {
+        name: "ECHELON ACADEMY",
+        logo: "img/ECHELON ACADEMY.jpg",
+        players: [" qvasher ", "hzZh  ", "stogi09. ","Vert1si ", "Into1imore ","x1tar0 ","khvoia","mintty" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 19 }
+    },
+
+    20: {
+        name: "ECHELON TEAM",
+        logo: "img/ECHELON TEAM.jpg",
+        players: [" norowaretIY ", "faloya  ", "wewqeqe ","unluck ", "Prizmarun ","helllink" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 20  }
+    },
+
+    21: {
+        name: "DL-Team",
+        logo: "img/DL-Team.jpg",
+        players: [" T1mPro", "Genessis  ", "LIL_nastusha","20.31", "Nami","qwalaz" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 21 }
+    },
+
+    22: {
+        name: "Ven team",
+        logo: "img/Ven team.jpg",
+        players: ["w0xi2k  ", "5 ", " Troid ","auraeater", "в розыске", ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 22  }
+    },
+
+    23: {
+        name: "Fonbet team",
+        logo: "img/Fonbet team.jpg",
+        players: ["Kasuke999 ", " anon1m666", "kyotaa","virpl", "s1lw3r","z1po0","Coach: lftr", ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 23 }
+    },
+
+    24: {
+        name: "GODBLESS TEAM",
+        logo: "img/GODBLESS TEAM.jpg",
+        players: [" quakaaaa", "  ImprezaLL", "znx","mist", "maLLii", ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 24  }
+    },
+
+    25: {
+        name: "TT.Future",
+        logo: "img/TT.Future.jpg",
+        players: [" ", " ", "","", "","" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 25 }
+    },
+
+    26: {
+        name: "Rekinder eSports",
+        logo: "img/Rekinder eSports.jpg",
+        players: [" sal1ch", "deadl0cked ", "L1lpep-fan","shnyroQ", "takuya","Winach","2girlpicks" ],
+        matches: [],
+        stats: { wins: 0, losses: 0, winrate: "0%", rating: 26 }
+    },
 };
 
 const urlParams = new URLSearchParams(window.location.search);

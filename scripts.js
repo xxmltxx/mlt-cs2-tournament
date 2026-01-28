@@ -195,7 +195,7 @@ const teamsData = {
     wins: 2,
     losses: 1,
     points: 0,
-    rank: 9,
+    rank: 14,
     players: [
       { name: "Dazzlix", photo: "img/player-photo.jpg" },
       { name: "Sojerio", photo: "img/player-photo.jpg" },
@@ -211,7 +211,7 @@ const teamsData = {
     wins: 0,
     losses: 1,
     points: 0,
-    rank: 9,
+    rank: 13,
     players: [
       { name: "farrrr", photo: "img/player-photo.jpg" },
       { name: "lov3zzy", photo: "img/player-photo.jpg" },
@@ -228,13 +228,217 @@ const teamsData = {
     wins: 0,
     losses: 0,
     points: 0,
-    rank: 9,
+    rank: 15,
     players: [
       { name: "puywx ", photo: "img/player-photo.jpg" },
       { name: "low11ness  ", photo: "img/player-photo.jpg" },
       { name: "1sma_333 ", photo: "img/player-photo.jpg" },
       { name: "T1FV ", photo: "img/player-photo.jpg" },
       { name: "greggy ", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+  16: {
+    name: "HOLOXY",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 16,
+    players: [
+      { name: " lmz", photo: "img/player-photo.jpg" },
+      { name: " akemanuory ", photo: "img/player-photo.jpg" },
+      { name: " dieelo-", photo: "img/player-photo.jpg" },
+      { name: "  ymf1le-", photo: "img/player-photo.jpg" },
+      { name: "  l1e", photo: "img/player-photo.jpg" },
+      { name: "Coach: Matriks ", photo: "img/player-photo.jpg" },
+      
+    ]
+    
+  },
+
+  17: {
+    name: "AurriX",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 17,
+    players: [
+      { name: " TuRm1st ", photo: "img/player-photo.jpg" },
+      { name: " art1k ", photo: "img/player-photo.jpg" },
+      { name: " XosakoX", photo: "img/player-photo.jpg" },
+      { name: "Whytemples ", photo: "img/player-photo.jpg" },
+      { name: " PozitiV", photo: "img/player-photo.jpg" },
+      { name: " neagent", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  18: {
+    name: "KOS Team",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "k1PS0 ", photo: "img/player-photo.jpg" },
+      { name: " ponder ", photo: "img/player-photo.jpg" },
+      { name: " Buburuza", photo: "img/player-photo.jpg" },
+      { name: " klouz", photo: "img/player-photo.jpg" },
+      { name: " vilchinskii", photo: "img/player-photo.jpg" },
+      { name: " D3lux", photo: "img/player-photo.jpg" },
+      { name: "mitsv ", photo: "img/player-photo.jpg" },
+      { name: "Sonk1 ", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  19: {
+    name: "ECHELON ACADEMY",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: " qvasher ", photo: "img/player-photo.jpg" },
+      { name: " hzZh  ", photo: "img/player-photo.jpg" },
+      { name: " stogi09. ", photo: "img/player-photo.jpg" },
+      { name: " Vert1si ", photo: "img/player-photo.jpg" },
+      { name: "Into1imore  ", photo: "img/player-photo.jpg" },
+      { name: " x1tar0 ", photo: "img/player-photo.jpg" },
+      { name: "khvoia ", photo: "img/player-photo.jpg" },
+      { name: "mintty ", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  20: {
+    name: "ECHELON TEAM",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: " norowaretIY ", photo: "img/player-photo.jpg" },
+      { name: " faloya  ", photo: "img/player-photo.jpg" },
+      { name: " wewqeqe ", photo: "img/player-photo.jpg" },
+      { name: " unluck ", photo: "img/player-photo.jpg" },
+      { name: "Prizmarun  ", photo: "img/player-photo.jpg" },
+      { name: " helllink", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  21: {
+    name: "DL-Team",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: " T1mPro", photo: "img/player-photo.jpg" },
+      { name: " Genessis  ", photo: "img/player-photo.jpg" },
+      { name: " LIL_nastusha", photo: "img/player-photo.jpg" },
+      { name: " 20.31", photo: "img/player-photo.jpg" },
+      { name: "Nami ", photo: "img/player-photo.jpg" },
+      { name: "qwalaz ", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  22: {
+    name: "Ven team",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "w0xi2k  ", photo: "img/player-photo.jpg" },
+      { name: " 5", photo: "img/player-photo.jpg" },
+      { name: "  Troid ", photo: "img/player-photo.jpg" },
+      { name: "auraeater ", photo: "img/player-photo.jpg" },
+      { name: " в розыске", photo: "img/player-photo.jpg" },
+      
+      
+    ]
+  },
+
+  23: {
+    name: "Fonbet team",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: "Kasuke999 ", photo: "img/player-photo.jpg" },
+      { name: " anon1m666 ", photo: "img/player-photo.jpg" },
+      { name: " kyotaa", photo: "img/player-photo.jpg" },
+      { name: " virpl", photo: "img/player-photo.jpg" },
+      { name: " s1lw3r", photo: "img/player-photo.jpg" },
+      { name: "z1po0 ", photo: "img/player-photo.jpg" },
+      { name: "Coach: lftr", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  24: {
+    name: "GODBLESS TEAM",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: " quakaaaa", photo: "img/player-photo.jpg" },
+      { name: " ImprezaLL ", photo: "img/player-photo.jpg" },
+      { name: "  znx", photo: "img/player-photo.jpg" },
+      { name: " mist", photo: "img/player-photo.jpg" },
+      { name: "maLLii ", photo: "img/player-photo.jpg" },
+      
+      
+    ]
+  },
+
+  25: {
+    name: "TT.Future",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: " ", photo: "img/player-photo.jpg" },
+      { name: "  ", photo: "img/player-photo.jpg" },
+      { name: " ", photo: "img/player-photo.jpg" },
+      { name: " ", photo: "img/player-photo.jpg" },
+      { name: " ", photo: "img/player-photo.jpg" },
+      { name: " ", photo: "img/player-photo.jpg" },
+      
+    ]
+  },
+
+  26: {
+    name: "Rekinder eSports",
+    stats: "0-0 (0 очков)",
+    wins: 0,
+    losses: 0,
+    points: 0,
+    rank: 9,
+    players: [
+      { name: " sal1ch", photo: "img/player-photo.jpg" },
+      { name: " deadl0cked ", photo: "img/player-photo.jpg" },
+      { name: " L1lpep-fan", photo: "img/player-photo.jpg" },
+      { name: " shnyroQ", photo: "img/player-photo.jpg" },
+      { name: " takuya", photo: "img/player-photo.jpg" },
+      { name: "Winach ", photo: "img/player-photo.jpg" },
+      { name: " 2girlpicks", photo: "img/player-photo.jpg" },
       
     ]
   },
