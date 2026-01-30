@@ -110,7 +110,7 @@ const teamsData = {
       22: {
         name: "Ven team",
         logo: "img/Ven team.jpg",
-        players: [" T1mPro", "Genessis  ", "LIL_nastusha","20.31", "Nami","qwalaz" ]
+        players: [" w0xi2k ", "5   ", "Troid ","auraeater", "в розыске", ]
     },
       23: {
         name: "Fonbet team",
