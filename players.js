@@ -105,7 +105,7 @@ const teamsData = {
       21: {
         name: "DL-Team",
         logo: "img/DL-Team.jpg",
-        players: [" T1mPro", "Genessis  ", "LIL_nastusha","20.31", "Nami","qwalaz"]
+        players: [" T1mPro", "LIL_nastusha","20.31", "Nami","qwalaz"]
     },
       22: {
         name: "Ven team",

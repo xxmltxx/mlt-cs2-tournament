@@ -201,7 +201,7 @@ const teamsData = {
     21: {
         name: "DL-Team",
         logo: "img/DL-Team.jpg",
-        players: [" T1mPro", "Genessis  ", "LIL_nastusha","20.31", "Nami","qwalaz" ],
+        players: [" T1mPro",  "LIL_nastusha","20.31", "Nami","qwalaz" ],
         matches: [],
         stats: { wins: 0, losses: 0, winrate: "0%", rating: 21 }
     },
