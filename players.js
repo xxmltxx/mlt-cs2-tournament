@@ -38,7 +38,7 @@ const teamsData = {
         players: ["patrick", "azend", "tolsti", "Macken", "dnm", "Stenc1L"]
     },
     8: {
-        name: "Platina Esports Academy",
+        name: "Platina Esports ",
         logo: "img/Platina Esports Academy.jpg",
         players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7"]
     },

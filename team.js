@@ -80,7 +80,7 @@ const teamsData = {
         stats: { wins: 0, losses: 0, winrate: "0%", rating: 9 }
     },
     8: {
-        name: "Platina Esports Academy",
+        name: "Platina Esports ",
         logo: "img/Platina Esports Academy.jpg",
         players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7"],
         matches: [
