@@ -240,7 +240,7 @@ const teamsData = {
   },
   16: {
     name: "HOLOXY",
-    stats: "0-0 (0 очков)",
+    stats: "3-0 (150 очков)",
     wins: 0,
     losses: 0,
     points: 0,
@@ -353,7 +353,7 @@ const teamsData = {
 
   22: {
     name: "Ven team",
-    stats: "0-0 (0 очков)",
+    stats: "3-0 (150 очков)",
     wins: 0,
     losses: 0,
     points: 0,
@@ -426,7 +426,7 @@ const teamsData = {
 
   26: {
     name: "Rekinder eSports",
-    stats: "0-0 (0 очков)",
+    stats: "3-1 (125 очков)",
     wins: 0,
     losses: 0,
     points: 0,
