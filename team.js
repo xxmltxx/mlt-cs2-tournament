@@ -227,7 +227,7 @@ const teamsData = {
             { opponent: "KOS Team", opponentLogo: "img/KOS Team.jpg", myScore: 2, oppScore:13 , date: "31.01.2026", stage: "0:0" },
             { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 13, oppScore:10 , date: "31.01.2026", stage: "0:1" },
             { opponent: "Rekinder eSports", opponentLogo: "img/Rekinder eSports.jpg", myScore: 8, oppScore:13 , date: "01.02.2026", stage: "1:1" },
-            { opponent: "AurriX", opponentLogo: "img/AurriX.jpg", myScore: 2, oppScore:0 , date: "01.02.2026", stage: "1:2" },
+            { opponent: "AurriX", opponentLogo: "img/AurriX.jpg", myScore: 0, oppScore:2 , date: "01.02.2026", stage: "1:2" },
         ],
         stats: { wins: 0, losses: 0, winrate: "0%", rating: 19 }
     },
