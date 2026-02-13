@@ -16,7 +16,7 @@ const teamsData = {
             { opponent: "Lotos Team", opponentLogo: "img/lotos.jpg", myScore: 2, oppScore: 0, date: "10.01.2026", stage: "1/2" },
             { opponent: "Xenox Team", opponentLogo: "img/Xenox Team.jpg", myScore: 2, oppScore: 0, date: "11.01.2026", stage: "Финал" },
         ],
-        stats: { wins: 6, losses: 0, winrate: "100%", rating: 1 }
+        stats: { wins: 6, losses: 3, winrate: "66%", rating: 3 }
     },
    
     2: {
@@ -30,7 +30,7 @@ const teamsData = {
             
             
         ],
-        stats: { wins: 2, losses: 1, winrate: "66%", rating: 2 }
+        stats: { wins: 2, losses: 1, winrate: "66%", rating: 9 }
     },
     3: {
         name: "HW Team",
@@ -43,7 +43,7 @@ const teamsData = {
             { opponent: "Platina Esports ", opponentLogo: "img/Platina Esports Academy.jpg", myScore: 7, oppScore: 13, date: "31.01.2026", stage: "0:0" },
             { opponent: "ECHELON ACADEMY", opponentLogo: "img/ECHELON ACADEMY.jpg", myScore: 10, oppScore:13 , date: "31.01.2026", stage: "0:1" },
                { opponent: "Lotos Team", opponentLogo: "img/lotos.jpg", myScore: 2, oppScore:0 , date: "01.02.2026", stage: "1:2" },
-            
+            { opponent: "Platina Esports", opponentLogo: "img/Platina Esports Academy.jpg", myScore: 0, oppScore:2 , date: "07.02.2026", stage: "1/4" },
         ],
         stats: { wins: 3, losses:3, winrate: "50%", rating: 10 }
     },
@@ -95,10 +95,11 @@ const teamsData = {
             { opponent: "Ven Team", opponentLogo: "img/Ven Team.jpg", myScore: 1, oppScore:2 , date: "01.02.2026", stage: "2:0" },
                { opponent: "STAR GAMING ACADEMY", opponentLogo: "img/STAR GAMING ACADEMY.jpg", myScore: 1, oppScore:2 , date: "01.02.2026", stage: "2:1" },
                { opponent: "Aurrix", opponentLogo: "img/Arruix.jpg", myScore: 2, oppScore:1 , date: "01.02.2026", stage: "2:2" },
+                { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 2, oppScore:0 , date: "07.02.2026", stage: "1/4" },
 
 
         ],
-        stats: { wins: 3, losses: 3, winrate: "50%", rating: 7 }
+        stats: { wins: 3, losses: 2, winrate: "60%", rating: 7 }
     },
     9: {
         name: "LOTOS Team",
@@ -169,15 +170,21 @@ const teamsData = {
     15: {
         name: "STAR GAMING ACADEMY",
         logo: "img/STAR GAMING ACADEMY.jpg",
+        trophies: [
+    { title: "MLT League season 3", date: "Февраль 2026", image: "img/imgcupmajor.jpg" },
+    
+],
         players: ["puywx ", "low11ness ", "1sma_333","T1FV ", "greggy","T1m2r" ],
         matches: [
             { opponent: "AurriX", opponentLogo: "img/AurriX.jpg", myScore: 13, oppScore:5 , date: "31.01.2026", stage: "0:0" },
             { opponent: "Ven Team", opponentLogo: "img/Ven Team.jpg", myScore: 10, oppScore:13 , date: "31.01.2026", stage: "1:0" },
             { opponent: "KOS Team", opponentLogo: "img/KOS Team.jpg", myScore: 13, oppScore:0 , date: "01.02.2026", stage: "1:1" },
             { opponent: "Platina Esports", opponentLogo: "img/Platina Esports Academy.jpg", myScore: 2, oppScore:1 , date: "01.02.2026", stage: "2:1" },
-            
+            { opponent: "Rekinder Esports", opponentLogo: "img/Rekinder Esports.jpg", myScore: 2, oppScore:0 , date: "07.02.2026", stage: "1/4" },
+            { opponent: "Ven Team", opponentLogo: "img/Ven Team.jpg", myScore: 2, oppScore:0 , date: "08.02.2026", stage: "1/2" },
+            { opponent: "HOLOXY", opponentLogo: "img/HOLOXY.jpg", myScore: 2, oppScore:0 , date: "08.02.2026", stage: "Grand-Final" },
         ],
-        stats: { wins: 3, losses: 1, winrate: "75%", rating: 6 }
+        stats: { wins: 6, losses: 1, winrate: "90%", rating: 1 }
     },
     
     16: {
@@ -188,8 +195,11 @@ const teamsData = {
             { opponent: "DL-Team", opponentLogo: "img/DL-Team.jpg", myScore: 13, oppScore:5 , date: "31.01.2026", stage: "0:0" },
             { opponent: "Rekinder eSports", opponentLogo: "img/Rekinder eSports.jpg", myScore: 13, oppScore:5 , date: "31.01.2026", stage: "1:0" },
             { opponent: "GODBLESS TEAM", opponentLogo: "img/GODBLESS TEAM.jpg", myScore: 2, oppScore:0 , date: "01.02.2026", stage: "2:0" },
+            { opponent: "Fonbet Team", opponentLogo: "img/Fonbet Team.jpg", myScore: 2, oppScore:0 , date: "07.02.2026", stage: "1.4" },
+            { opponent: "Platina Esports", opponentLogo: "img/Platina Esports Academy.jpg", myScore: 2, oppScore:0 , date: "08.02.2026", stage: "1.2" },
+            { opponent: "STAR GAMING ACADEMY", opponentLogo: "img/STAR GAMING ACADEMY.jpg", myScore: 0, oppScore:2 , date: "08.02.2026", stage: "Grand-Final" },
         ],
-        stats: { wins: 3, losses: 0, winrate: "100%", rating: 2 }
+        stats: { wins: 5, losses: 1, winrate: "85%", rating: 2 }
     },
 
     17: {
@@ -229,63 +239,104 @@ const teamsData = {
             { opponent: "Rekinder eSports", opponentLogo: "img/Rekinder eSports.jpg", myScore: 8, oppScore:13 , date: "01.02.2026", stage: "1:1" },
             { opponent: "AurriX", opponentLogo: "img/AurriX.jpg", myScore: 0, oppScore:2 , date: "01.02.2026", stage: "1:2" },
         ],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 19 }
+        stats: { wins: 1, losses: 3, winrate: "25%", rating: 24 }
     },
 
     20: {
         name: "ECHELON TEAM",
         logo: "img/ECHELON TEAM.jpg",
         players: [" norowaretIY ", "faloya  ", "wewqeqe ","unluck ", "Prizmarun ","helllink" ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 20  }
+        matches: [
+            { opponent: "TT.Future", opponentLogo: "img/TT.Future.jpg", myScore: 13, oppScore:0 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "GODBLESS TEAM", opponentLogo: "img/GODBLESS TEAM.jpg", myScore: 8, oppScore:13 , date: "31.01.2026", stage: "1:0" },
+             { opponent: "AurriX", opponentLogo: "img/AurriX.jpg", myScore: 13, oppScore:8 , date: "01.02.2026", stage: "1:1" },
+               { opponent: "Fonbet Team", opponentLogo: "img/Fonbet Team.jpg", myScore: 0, oppScore:2 , date: "01.02.2026", stage: "2:1" },
+                 { opponent: "KOS Team", opponentLogo: "img/KOS Team.jpg", myScore: 1, oppScore:2 , date: "02.02.2026", stage: "2:2" },
+
+
+        ],
+        stats: { wins: 2, losses: 3, winrate: "40%", rating: 15  }
     },
 
     21: {
         name: "DL-Team",
         logo: "img/DL-Team.jpg",
         players: [" T1mPro",  "LIL_nastusha","20.31", "Nami","qwalaz" ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 21 }
+        matches: [
+            { opponent: "HOLOXY", opponentLogo: "img/HOLOXY.jpg", myScore: 5, oppScore:13 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "Fonbet team", opponentLogo: "img/Fonbet team.jpg", myScore: 13, oppScore:10 , date: "31.01.2026", stage: "0:1" },
+            { opponent: "Lotos Team", opponentLogo: "img/Lotos.jpg", myScore: 0, oppScore:13 , date: "01.02.2026", stage: "0:2" },
+        ],
+        stats: { wins: 0, losses: 3, winrate: "0%", rating: 25 }
     },
 
     22: {
         name: "Ven team",
         logo: "img/Ven team.jpg",
         players: ["w0xi2k  ", "5 ", " Troid ","auraeater", "в розыске", ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 22  }
+        matches: [
+            { opponent: "Wol2nt Team", opponentLogo: "img/Wol2nt Team.jpg", myScore: 13, oppScore:0 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "STAR GAMING ACADEMY", opponentLogo: "img/STAR GAMING ACADEMY.jpg", myScore: 13, oppScore:10 , date: "31.01.2026", stage: "1:0" },
+            { opponent: "Platina Esports", opponentLogo: "img/Platina Esports Academy.jpg", myScore: 2, oppScore:1 , date: "01.02.2026", stage: "2:0" },
+            { opponent: "KOS Team", opponentLogo: "img/KOS Team.jpg", myScore: 2, oppScore:0 , date: "06.02.2026", stage: "1/4" },
+             { opponent: "STAR GAMING ACADEMY", opponentLogo: "img/STAR GAMING ACADEMY.jpg", myScore: 0, oppScore:2 , date: "08.02.2026", stage: "1/2" },
+
+        ],
+        stats: { wins: 4, losses: 1, winrate: "80%", rating: 4  }
     },
 
     23: {
         name: "Fonbet team",
         logo: "img/Fonbet team.jpg",
         players: ["Kasuke999 ", " anon1m666", "kyotaa","virpl", "s1lw3r","z1po0","Coach: lftr", ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 23 }
+        matches: [
+            { opponent: "Rekinder eSports", opponentLogo: "img/Rekinder eSports.jpg", myScore: 10, oppScore:13 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "DL-Team", opponentLogo: "img/DL-Team.jpg", myScore: 13, oppScore:10 , date: "31.01.2026", stage: "0:1" },
+            { opponent: "TT.Future", opponentLogo: "img/TT.Future.jpg", myScore: 13, oppScore:7 , date: "01.02.2026", stage: "1:1" },
+            { opponent: "ECHELON TEAM", opponentLogo: "img/ECHELON TEAM.jpg", myScore: 2, oppScore:0 , date: "01.02.2026", stage: "2:1" },
+             { opponent: "HOLOXY", opponentLogo: "img/HOLOXY.jpg", myScore: 0, oppScore:2 , date: "06.02.2026", stage: "1/4" },
+        ],
+        stats: { wins: 3, losses: 2, winrate: "60%", rating: 6 }
     },
 
     24: {
         name: "GODBLESS TEAM",
         logo: "img/GODBLESS TEAM.jpg",
         players: [" quakaaaa", "  ImprezaLL", "znx","mist", "maLLii", ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 24  }
+        matches: [
+            { opponent: "Lotos Team", opponentLogo: "img/Lotos.jpg", myScore: 13, oppScore:0 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "ECHELON TEAM", opponentLogo: "img/ECHELON TEAM.jpg", myScore: 13, oppScore:9 , date: "31.01.2026", stage: "1:0" },
+            { opponent: "HOLOXY", opponentLogo: "img/HOLOXY.jpg", myScore: 0, oppScore:2 , date: "01.02.2026", stage: "2:0" },
+            { opponent: "Rekinder Esports", opponentLogo: "img/Rekinder Esports.jpg", myScore: 0, oppScore:2 , date: "01.02.2026", stage: "2:1" },
+        ],
+        stats: { wins: 2, losses: 3, winrate: "40%", rating: 14  }
     },
 
     25: {
         name: "TT.Future",
         logo: "img/TT.Future.jpg",
         players: [" ", " ", "","", "","" ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 25 }
+        matches: [
+            { opponent: "ECHELON TEAM", opponentLogo: "img/ECHELON TEAM.jpg", myScore: 0, oppScore:13 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "Lotos Team", opponentLogo: "img/Lotos Team.jpg", myScore: 22, oppScore:20 , date: "31.01.2026", stage: "0:1" },
+            { opponent: "Fonbet Team", opponentLogo: "img/Fonbet Team.jpg", myScore: 7, oppScore:13 , date: "01.02.2026", stage: "1:1" },
+            { opponent: "KOS Team", opponentLogo: "img/KOS Team.jpg", myScore: 0, oppScore:2 , date: "01.02.2026", stage: "1:2" },
+        ],
+        stats: { wins: 1, losses: 3, winrate: "25%", rating: 25 }
     },
 
     26: {
         name: "Rekinder eSports",
         logo: "img/Rekinder eSports.jpg",
         players: [" sal1ch", "deadl0cked ", "L1lpep-fan","shnyroQ", "takuya","Winach","2girlpicks" ],
-        matches: [],
-        stats: { wins: 0, losses: 0, winrate: "0%", rating: 26 }
+        matches: [
+            { opponent: "Fonbet team", opponentLogo: "img/Fonbet team.jpg", myScore: 13, oppScore:10 , date: "31.01.2026", stage: "0:0" },
+            { opponent: "HOLOXY", opponentLogo: "img/HOLOXY.jpg", myScore: 5, oppScore:13 , date: "31.01.2026", stage: "1:0" },
+            { opponent: "ECHELON ACADEMY", opponentLogo: "img/ECHELON ACADEMY.jpg", myScore: 13, oppScore:8 , date: "01.02.2026", stage: "1:1" },
+            { opponent: "GODBLESS TEAM", opponentLogo: "img/GODBLESS TEAM.jpg", myScore: 2, oppScore:0 , date: "01.02.2026", stage: "2:1" },
+             { opponent: "STAR GAMING ACADEMY", opponentLogo: "img/STAR GAMING ACADEMY.jpg", myScore: 0, oppScore:2 , date: "06.02.2026", stage: "1/4" },
+        ],
+        stats: { wins: 3, losses: 2, winrate: "60%", rating: 5 }
     },
 };
 
