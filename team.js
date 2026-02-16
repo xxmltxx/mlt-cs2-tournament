@@ -171,7 +171,7 @@ const teamsData = {
         name: "STAR GAMING ACADEMY",
         logo: "img/STAR GAMING ACADEMY.jpg",
         trophies: [
-    { title: "MLT League season 3", date: "Февраль 2026", image: "img/imgcupmajor.jpg" },
+    { title: "MLT League season 3", date: "Февраль 2026", image: "img/mlt3seasonjpg.jpg" },
     
 ],
         players: ["puywx ", "low11ness ", "1sma_333","T1FV ", "greggy","T1m2r" ],
