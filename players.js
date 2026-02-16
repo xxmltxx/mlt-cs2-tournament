@@ -40,7 +40,7 @@ const teamsData = {
     8: {
         name: "Platina Esports ",
         logo: "img/Platina Esports Academy.jpg",
-        players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7","sonov1337","YAme"]
+        players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7","sonov1337","YAme","$200"]
     },
     9: {
         name: "LOTOS Team",
@@ -75,7 +75,7 @@ const teamsData = {
     15: {
         name: "STAR GAMING ACADEMY",
         logo: "img/STAR GAMING ACADEMY.jpg",
-        players: ["puywx", "low11ness", "1sma_333", "T1FV", "greggy","T1m2r","веселый бобер","$200"]
+        players: ["puywx", "low11ness", "1sma_333", "T1FV", "greggy","T1m2r","веселый бобер",]
     },
       16: {
         name: "HOLOXY",
@@ -232,7 +232,7 @@ document.getElementById("sortFilter").addEventListener("change", e => {
     applyFiltersAndSort();
 });
 
-// Заполняем фильтр команд
+/// Заполняем фильтр команд
 const teamFilter = document.getElementById("teamFilter");
 teamFilter.innerHTML = '<option value="all">Все команды</option>';
 
@@ -244,5 +244,8 @@ uniqueTeams.forEach(team => {
     teamFilter.appendChild(option);
 });
 
-// Первичный рендер
+// Первичный рендер — сразу сортируем по рейтингу
+currentSortBy = "rating";
+document.getElementById("sortFilter").value = "rating";
 applyFiltersAndSort();
+

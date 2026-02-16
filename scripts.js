@@ -121,7 +121,9 @@ const teamsData = {
       { name: "sintax", photo: "img/player-photo.jpg" },
       { name: "anderwolt", photo: "img/player-photo.jpg" },
       { name: " Imprezall", photo: "img/player-photo.jpg" },
-      { name: " co1n", photo: "img/player-photo.jpg" }
+      { name: " co1n", photo: "img/player-photo.jpg" },
+      { name: "$200", photo: "img/player-photo.jpg" },
+      
     ]
   },
   9: {

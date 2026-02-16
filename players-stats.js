@@ -67,6 +67,7 @@ const playerStatsData = {
 "Monax7": { matches: 11, kdDiff: 0.82, kd: "111/134", rating: "2.60" },
 "sonov1337": { matches: 1, kdDiff: 0.8, kd: "16/20", rating: "3.20" },
 "YAme": { matches: 4, kdDiff: 1.08, kd: "66/61", rating: "4.49" },
+"$200": { matches: 10, kdDiff: 1.56, kd: "228/146", rating: "7.45" },
 
 
   // LOTOS Team
@@ -123,7 +124,7 @@ const playerStatsData = {
 "greggy": { matches: 0, kdDiff: 0, kd: "0.00", rating: "0.00" },
 "T1m2r": { matches: 10, kdDiff: 0.8, kd: "137/170", rating: "2.96" },
 "веселый бобер": { matches: 10, kdDiff: 1.18, kd: "161/137", rating: "4.74" },
-"$200": { matches: 10, kdDiff: 1.56, kd: "228/146", rating: "7.45" },
+
 
 
     // HOLOXY (команда 16)
