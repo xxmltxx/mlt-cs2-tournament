@@ -87,7 +87,7 @@ const teamsData = {
     8: {
         name: "Platina Esports ",
         logo: "img/Platina Esports Academy.jpg",
-        players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7"],
+        players: ["vlamIcH", "Script1009", "mONRO", "_kasai", "Monax7","$200"],
         matches: [
             { opponent: "2Play", opponentLogo: "img/2play.jpg", myScore: 0, oppScore: 2, date: "18.12.2025", stage: "1/4" },
             { opponent: "HW Team", opponentLogo: "img/HW Team.jpg", myScore: 13, oppScore:7 , date: "31.01.2026", stage: "0:0" },
