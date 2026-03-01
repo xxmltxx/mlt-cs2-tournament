@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "teams"
+    label: "Команды"
+    folder: "_data/teams"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Название", name: "name", widget: "string" }
+      - { label: "Логотип", name: "logo", widget: "image" }
+      - { label: "Игроки", name: "players", widget: "list" }
+      - { label: "Побед", name: "wins", widget: "number" }
+      - { label: "Поражений", name: "losses", widget: "number" }
+      - { label: "Винрейт", name: "winrate", widget: "string" }
+
+  - name: "matches"
+    label: "Матчи"
+    folder: "_data/matches"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Команда 1", name: "team1", widget: "string" }
+      - { label: "Команда 2", name: "team2", widget: "string" }
+      - { label: "Счёт 1", name: "score1", widget: "number" }
+      - { label: "Счёт 2", name: "score2", widget: "number" }
+      - { label: "Дата", name: "date", widget: "string" }
+      - { label: "Стадия", name: "stage", widget: "string" }
+
+  - name: "news"
+    label: "Новости"
+    folder: "_data/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Текст", name: "body", widget: "text" }
+      - { label: "Дата", name: "date", widget: "string" }
+      - { label: "Тип", name: "type", widget: "select", options: ["UPDATE", "TOURNAMENT", "NEWS"] }
+
+  - name: "players"
+    label: "Игроки"
+    folder: "_data/players"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Ник", name: "nickname", widget: "string" }
+      - { label: "Команда", name: "team", widget: "string" }
+      - { label: "Матчи", name: "matches", widget: "number" }
+      - { label: "K/D", name: "kd", widget: "string" }
+      - { label: "Рейтинг", name: "rating", widget: "string" }
